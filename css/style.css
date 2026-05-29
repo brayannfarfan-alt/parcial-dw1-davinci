@@ -1,3 +1,6 @@
+/* ===================================================
+    ROOT
+=================================================== */
 :root {
     --bluey-sky-top: #a6daf7;
     --bluey-sky-bottom: #e8f5fd;
@@ -11,11 +14,14 @@
     --text-secondary: #d8e2f1;
     --title-dark: #15213d;
     --paragraph-dark: #4d607c;
-    --shadow:
-        0 12px 40px rgba(0, 0, 0, 0.18);
+    --shadow:0 12px 40px rgba(0, 0, 0, 0.18);
     --glass-blur: blur(18px);
     --container-width: 1280px;
+    --bg-general: #7caed6;
 }
+/* ===================================================
+    RESET
+=================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -23,23 +29,6 @@
 }
 html {
     scroll-behavior: smooth;
-}
-body {
-    font-family: 'Nunito', sans-serif;
-    min-height: 100vh;
-    overflow-x: hidden;
-    position: relative;
-    background:linear-gradient(to bottom,var(--bluey-sky-top),var(--bluey-sky-bottom));
-}
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-    opacity: .75;
-    background-image: url('../img/clouds-background.png');
-    background-size: 120%;
 }
 img {
     display: block;
@@ -60,6 +49,29 @@ button {
 .topbar {
     display: none;
 }
+/* ===================================================
+    ESTILOS BODY
+=================================================== */
+body {
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    background:linear-gradient(to bottom,var(--bluey-sky-top),var(--bluey-sky-bottom));
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    opacity: .75;
+    background-image: url('../img/clouds-background.png');
+    background-size: 120%;
+}
+/* ===================================================
+    HERO BLUEY
+=================================================== */
 .hero {
     position: relative;
     z-index: 1;
@@ -164,6 +176,9 @@ button {
     color: var(--icon-active);
     filter:drop-shadow(0 0 10px rgba(100, 210, 255, .7));
 }
+/* ===================================================
+    QUE ES BLUEY 
+=================================================== */
 .bluey-about {
     position: relative;
     z-index: 1;
@@ -175,7 +190,7 @@ button {
 }
 .about-header h2 {
     font-size: clamp(2.5rem, 8vw, 5rem);
-    color: #7caed6;
+    color:  var(--bg-general);
     font-weight: 900;
     line-height: 1.1;
 }
@@ -213,6 +228,9 @@ button {
     font-weight: 800;
     max-width: 400px;
 }
+/* ===================================================
+    PORQUE BLUEY 
+=================================================== */
 .why-bluey{
     position:relative;
     z-index:1;
@@ -225,7 +243,7 @@ button {
 }
 .why-header h2{
     font-size:clamp(2.5rem, 8vw, 5rem);
-    color:#7caed6;
+    color: var(--bg-general);
     font-weight:900;
     line-height:1.1;
 }
@@ -262,9 +280,8 @@ button {
     font-weight:900;
 }
 /* ===================================================
-BLUEY EXTRA
+    BLUEY EXTRA
 =================================================== */
-
 .bluey-extra{
     position:relative;
     z-index:1;
@@ -273,11 +290,6 @@ BLUEY EXTRA
     flex-direction:column;
     gap:40px;
 }
-
-/* ===================================================
-CARD
-=================================================== */
-
 .extra-card{
     position:relative;
     overflow:hidden;
@@ -294,11 +306,6 @@ CARD
     backdrop-filter:blur(14px);
     box-shadow:0 15px 40px rgba(0,0,0,.06);
 }
-
-/* ===================================================
-CONTENT
-=================================================== */
-
 .extra-content{
     display:flex;
     flex-direction:column;
@@ -307,7 +314,7 @@ CONTENT
     z-index:2;
 }
 .extra-content h2{
-    color:#7caed6;
+    color: var(--bg-general);
     font-size:clamp(2rem, 7vw, 4rem);
     font-weight:900;
     line-height:1.1;
@@ -318,9 +325,6 @@ CONTENT
     line-height:1.7;
     font-weight:700;
 }
-/* ===================================================
-PLATFORMS
-=================================================== */
 .platforms{
     display:flex;
     flex-wrap:wrap;
@@ -328,13 +332,10 @@ PLATFORMS
     justify-content:center;
     gap:18px;
 }
-/* ===================================================
-BUTTON
-=================================================== */
 .newsletter-button{
     padding:16px 34px;
     border-radius:999px;
-    background:#7caed6;
+    background: var(--bg-general);
     color:white;
     font-weight:900;
     letter-spacing:.5px;
@@ -344,18 +345,111 @@ BUTTON
 .newsletter-button:hover{
     transform:translateY(-3px);
 }
-/* ===================================================
-CHARACTERS
-=================================================== */
 .extra-character{
     z-index:1;
 }
-.site-footer {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    padding: 30px 20px 140px;
-    color: #667892;
+
+/* ===================================================
+    FOOTER BLUEY
+=================================================== */
+.bluey-footer{
+    position:relative;
+    overflow:hidden;
+    background: var(--bg-dark-soft);
+    padding:70px 24px 120px;
+    color: var(--text-primary);
+    backdrop-filter: var(--glass-blur);
+}
+.footer-top{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:40px;
+    margin-bottom:50px;
+}
+.footer-logo img{
+    width:160px;
+}
+.footer-social{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:16px;
+}
+.footer-social a,
+.footer-subscribe{
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: var(--bg-general);
+    color: var(--bg-dark);
+    transition:.25s ease;
+}
+.footer-social a:hover,
+.footer-subscribe:hover{
+    transform:translateY(-4px);
+}
+.footer-social i,
+.footer-subscribe i{
+    width:24px;
+    height:24px;
+}
+.footer-subscribe{
+    width:auto;
+    padding:0 26px;
+    border-radius:999px;
+    gap:12px;
+    font-weight:900;
+    letter-spacing:.5px;
+}
+.footer-text{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    text-align:center;
+    margin-bottom:50px;
+}
+.footer-text p{
+    color: var(--shadow);
+    line-height:1.8;
+    font-size:.95rem;
+}
+.footer-links{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+    text-align:center;
+}
+.footer-links a{
+    color: var(--text-primary);
+    font-weight:800;
+    font-size:.95rem;
+    transition:.25s ease;
+}
+.footer-links a:hover{
+    opacity:.7;
+}
+.footer-floating{
+    position:absolute;
+    right:20px;
+    bottom:120px;
+    width:62px;
+    height:62px;
+    border-radius:50%;
+    background: var(--bg-general);
+    color: var(--bg-dark-soft);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow: var(--shadow);
+}
+.footer-floating i{
+    width:28px;
+    height:28px;
 }
 @media (min-width:768px) {
     .hero {
