@@ -13,11 +13,13 @@
     --text-primary: #ffffff;
     --text-secondary: #d8e2f1;
     --title-dark: #15213d;
+    --title-dark-soft: #625e96;
     --paragraph-dark: #4d607c;
     --shadow:0 12px 40px rgba(0, 0, 0, 0.18);
     --glass-blur: blur(18px);
     --container-width: 1280px;
     --bg-general: #7caed6;
+    --bg-modal: rgba(7,14,28,.72);
 }
 /* ===================================================
     RESET
@@ -68,6 +70,137 @@ body::before {
     opacity: .75;
     background-image: url('../img/clouds-background.png');
     background-size: 120%;
+}
+/* ===================================================
+NEWSLETTER MODAL
+=================================================== */
+.newsletter-modal{
+    position:fixed;
+    inset:0;
+    z-index:99999;
+    display:flex;
+    align-items:start;
+    justify-content:center;
+    padding:20px;
+    opacity:0;
+    visibility:hidden;
+    transition:.3s ease;
+}
+.newsletter-modal.active{
+    opacity:1;
+    visibility:visible;
+}
+.newsletter-overlay{
+    position:absolute;
+    inset:0;
+    background:var(--bg-modal);
+    backdrop-filter:blur(6px);
+}
+.newsletter-box{
+    position:relative;
+    width:min(100%, 540px);
+    max-height:80vh;
+    overflow-y:auto;
+    z-index:2;
+    background: var(--text-primary);
+    border-radius:36px;
+    padding:34px 28px 40px;
+    text-align:center;
+    animation:modalUp .35s ease;
+}
+@keyframes modalUp{
+    from{
+        opacity:0;
+        transform:translateY(30px) scale(.96);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+}
+.newsletter-close{
+    position:absolute;
+    top:18px;
+    right:18px;
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color: var(--title-dark-soft);
+    transition:.25s ease;
+}
+
+.newsletter-close i{
+    width:54px;
+    height:54px;
+}
+.newsletter-icon{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+}
+.newsletter-icon i{
+    width:90px;
+    height:90px;
+    color: var(--bg-general);
+}
+.newsletter-box h2{
+    color: var(--title-dark-soft);
+    font-size:clamp(1.4rem, 8vw, 1.4rem);
+    line-height:1;
+    font-weight:900;
+    margin-bottom:26px;
+}
+.newsletter-description{
+    color: var(--paragraph-dark);
+    font-size:1.2rem;
+    margin-bottom:15px;
+}
+.newsletter-small{
+    color: var(--paragraph-dark);
+    line-height:1;
+    font-size:.70rem;
+    margin-bottom:36px;
+}
+.newsletter-group{
+    margin-bottom:28px;
+}
+.newsletter-group h3{
+    color: var(--title-dark);
+    font-size:1rem;
+    font-weight:900;
+    margin-bottom:16px;
+}
+.newsletter-primary,
+.newsletter-secondary{
+    width:100%;
+    min-height:78px;
+    border-radius:999px;
+    font-size:1.2rem;
+    font-weight:900;
+    transition:.25s ease;
+}
+.newsletter-primary:hover,
+.newsletter-secondary:hover{
+    transform:translateY(-2px);
+}
+.newsletter-primary{
+    background: var(--title-dark-soft);
+    color:var(--text-primary);
+}
+.newsletter-secondary{
+    background: var(--bluey-sky-top);
+    color:var(--title-dark-soft);
+}
+.newsletter-link{
+    display:inline-block;
+    margin-top:10px;
+    color:var(--title-dark-soft);
+    font-size:1.1rem;
+    font-weight:800;
+    text-decoration:underline;
 }
 /* ===================================================
     HERO BLUEY
@@ -376,8 +509,7 @@ body::before {
     justify-content:center;
     gap:16px;
 }
-.footer-social a,
-.footer-subscribe{
+.footer-social .footer-social-item{
     width:58px;
     height:58px;
     border-radius:50%;
@@ -399,11 +531,16 @@ body::before {
 }
 .footer-subscribe{
     width:auto;
-    padding:0 26px;
+    padding:15px 26px;
     border-radius:999px;
     gap:12px;
     font-weight:900;
+    background: var(--bg-general);
     letter-spacing:.5px;
+    color: var(--bg-dark);
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 .footer-text{
     display:flex;
@@ -414,15 +551,18 @@ body::before {
 }
 .footer-text p{
     color: var(--shadow);
-    line-height:1.8;
+    line-height:1;
     font-size:.95rem;
 }
 .footer-links{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    gap:18px;
+    gap:1.3rem;
     text-align:center;
+}
+.footer-links ul li{
+    margin: 5px 0px;
 }
 .footer-links a{
     color: var(--text-primary);
@@ -773,4 +913,24 @@ body::before {
         padding:18px 42px;
         font-size:1rem;
     }
+    .bluey-footer{
+        padding:70px min(5vw, 80px) 50px;
+    }
+    .footer-content{
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .footer-top{
+        margin-bottom:70px;
+    }
+    .footer-text p{
+        font-size:1rem;
+        line-height: .7rem;
+    }
+    .footer-floating{
+        right:40px;
+        bottom:30px;
+    }
+
 }

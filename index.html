@@ -40,9 +40,46 @@
             <a href="/" class="hero-logo" aria-label="Inicio">
                 <img src="img/bluey-logo.svg" alt="Logo Bluey">
             </a>
-            <button class="hero-email-button" aria-label="Abrir mensajes">
+            <button class="hero-email-button" aria-label="Abrir mensajes" id="openNeswletter">
                 <img src="img/icono-email-logo.svg" alt="" aria-hidden="true">
             </button>
+            <div class="newsletter-modal" id="newsletterModal">
+                <div class="newsletter-overlay"></div>
+                <div class="newsletter-box">
+                    <button class="newsletter-close" id="closeNewsletter">
+                        <i data-lucide="x"></i>
+                    </button>
+                    <div class="newsletter-icon">
+                        <i data-lucide="send"></i>
+                    </div>
+                    <h2>Unite a nuestro<br>NEWSLETTER</h2>
+                    <p class="newsletter-description">
+                        Create un perfil para recibir novedades, ofertas exclusivas y contenido personalizado de Bluey.
+                    </p>
+                    <p class="newsletter-small">
+                        Al registrarte, aceptas nuestras <a href="pages/newsletter.html">Políticas de Privacidad</a> y <a href="pages/newsletter.html">Términos de Servicio</a>.
+                    </p>
+                    <div class="newsletter-group">
+                        <h3>
+                            ¿No tenés una cuenta en Bluey?
+                        </h3>
+                        <a href="pages/register.html">
+                            <button class="newsletter-primary">
+                            REGISTRATE AHORA
+                            </button>
+                        </a>
+                    </div>
+                    <div class="newsletter-group">
+                        <h3>Iniciar sesión</h3>
+                        <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fwww.google.com%2F&ec=futura_exp_og_si_72776762_e&hl=es&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1390557286%3A1780075715765414" target="_blank">
+                            <button class="newsletter-secondary">
+                            CONTINUAR CON GOOGLE
+                            </button>
+                        </a>
+                    </div>
+                    <a href="pages/newsletter.html" class="newsletter-link">Para más información hacé clic aquí</a>
+                </div>
+            </div>
         </section>
 
         <section class="hero-content">
@@ -75,11 +112,16 @@
 
     <nav class="app-navigation" aria-label="Navegación rápida">
         <ul class="app-navigation-list">
-            <li><a href="pages/menu.html" class="app-navigation-link"><i data-lucide="menu"></i><span>Menu</span></a></li>
-            <li><a href="index.html" class="app-navigation-link active" aria-current="page"><i data-lucide="house"></i><span>Home</span></a></li>
-            <li><a href="pages/sport.html" class="app-navigation-link"><i data-lucide="trophy"></i><span>Sports</span></a></li>
-            <li><a href="pages/casino.html" class="app-navigation-link"><i data-lucide="clover"></i><span>Casino</span></a></li>
-            <li><a href="pages/explore.html" class="app-navigation-link"><i data-lucide="search"></i><span>Explore</span></a></li>
+            <li><a href="pages/menu.html" class="app-navigation-link"><i data-lucide="menu"></i><span>Menu</span></a>
+            </li>
+            <li><a href="index.html" class="app-navigation-link active" aria-current="page"><i
+                        data-lucide="house"></i><span>Casa</span></a></li>
+            <li><a href="pages/personajes.html" class="app-navigation-link"><i
+                        data-lucide="ghost"></i><span>Personajes</span></a></li>
+            <li><a href="pages/planificador.html" class="app-navigation-link"><i
+                        data-lucide="bot"></i><span>IA</span></a></li>
+            <li><a href="pages/explore.html" class="app-navigation-link"><i
+                        data-lucide="search"></i><span>Explore</span></a></li>
         </ul>
     </nav>
 
@@ -163,8 +205,10 @@
                         MIRÁ BLUEY EN
                     </h2>
                     <div class="platforms">
-                        <a href="https://www.disneyplus.com/es-ar" target="_blank"><img src="img/disney-Junior-logo-new.png" alt="Disney Junior"></a>
-                        <a href="https://www.youtube.com/@BlueyOfficialChannel" target="_blank"><img src="img/youtbe.png" alt="YouTube"></a>
+                        <a href="https://www.disneyplus.com/es-ar" target="_blank"><img
+                                src="img/disney-Junior-logo-new.png" alt="Disney Junior"></a>
+                        <a href="https://www.youtube.com/@BlueyOfficialChannel" target="_blank"><img
+                                src="img/youtbe.png" alt="YouTube"></a>
                     </div>
                 </div>
                 <figure class="extra-character right">
@@ -199,70 +243,72 @@
                 <img src="img/bluey-logo-blanco.svg" alt="Bluey Logo">
             </a>
             <div class="footer-social">
-                <a href="https://www.facebook.com/OfficialBlueyTV/" target="_blank">
+                <a class="footer-social-item" href="https://www.facebook.com/OfficialBlueyTV/" target="_blank">
                     <img src="img/facebook.png" alt="Logo facebook">
                 </a>
-                <a href="https://www.instagram.com/officialbluey/" target="_blank">
+                <a class="footer-social-item" href="https://www.instagram.com/officialbluey/" target="_blank">
                     <img src="img/instagram.png" alt="Logo instagram">
                 </a>
-                <a href="https://www.tiktok.com/@bluey" target="_blank">
+                <a class="footer-social-item" href="https://www.tiktok.com/@bluey" target="_blank">
                     <img src="img/tik-tok.png" alt="Logo tik tok">
                 </a>
-                <a href="https://open.spotify.com/intl-es/artist/6ca3AFdIIgaP4ZIW8J6zXu" target="_blank">
+                <a class="footer-social-item" href="https://open.spotify.com/intl-es/artist/6ca3AFdIIgaP4ZIW8J6zXu"
+                    target="_blank">
                     <img src="img/spotify.png" alt="Logo spotify">
                 </a>
-                <a href="https://www.youtube.com/c/BlueyOfficialChannel" target="_blank">
+                <a class="footer-social-item" href="https://www.youtube.com/c/BlueyOfficialChannel" target="_blank">
                     <img src="img/youtube.png" alt="Logo youtube">
                 </a>
-                <button class="footer-subscribe">
-                    <img src="img/carta.png" alt="Logo carta">
-                    <span>
-                        SUBSCRIBITE
-                    </span>
-                </button>
+                <div>
+                    <a href="pages/newsletter.html" class="footer-subscribe">
+                        <img src="img/carta.png" alt="Logo carta">
+                        <span>
+                            SUBSCRIBITE
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="footer-text">
-            <p>
-                BLUEY™ una Familia divertida
-            </p>
-            <p>
-                Email: brayann.verona@davinci.edu.ar
-            </p>
-            <p>
-                Edad: 31 años
-            </p>
-            <p>
-                Alumno: Brayann Verona
-            </p>
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>
+                    BLUEY™ una Familia divertida
+                </p>
+                <p>
+                    Email: brayann.verona@davinci.edu.ar
+                </p>
+                <p>
+                    Edad: 31 años
+                </p>
+                <p>
+                    Alumno: Brayann Verona
+                </p>
+            </div>
+            <nav class="footer-links">
+                <ul>
+                    <li><a href="#">
+                            Contactanos
+                        </a></li>
+                    <li><a href="#">
+                            Términos y Condiciones
+                        </a></li>
+                    <li><a href="#">
+                            Politicas de privacidad
+                        </a></li>
+                    <li><a href="#">
+                            Politicas de Sesión
+                        </a></li>
+                    <li><a href="#">
+                            BBC Studios
+                        </a></li>
+                </ul>
+            </nav>
+            <a href="#header-topbar" class="footer-floating">
+                <i data-lucide="chevron-up"></i>
+            </a>
         </div>
-        <nav class="footer-links">
-            <ul>
-                <li><a href="#">
-                        Contactanos
-                    </a></li>
-                <li><a href="#">
-                        Términos y Condiciones 
-                    </a></li>
-                <li><a href="#">
-                        Politicas de privacidad
-                    </a></li>
-                <li><a href="#">
-                        Politicas de Sesión
-                    </a></li>
-                <li><a href="#">
-                        BBC Studios
-                    </a></li>
-            </ul>
-        </nav>
-        <a href="#header-topbar" class="footer-floating">
-            <i data-lucide="chevron-up"></i>
-        </a>
     </footer>
-
-    <script>
-        lucide.createIcons();
-    </script>
+    <script src="js/app.js"></script>
 
 </body>
 
