@@ -8,13 +8,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="../css/personajes.css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-
+    <!--===================================================
+            NEWSLETTER MODAL
+    ===================================================  -->
+    <div class="newsletter-modal" id="newsletterModal">
+        <div class="newsletter-overlay"></div>
+        <div class="newsletter-box">
+            <button class="newsletter-close" id="closeNewsletter">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="newsletter-icon">
+                <i data-lucide="send"></i>
+            </div>
+            <h2>Unite a nuestro<br>NEWSLETTER</h2>
+            <p class="newsletter-description">
+                Create un perfil para recibir novedades, ofertas exclusivas y contenido personalizado de Bluey.
+            </p>
+            <p class="newsletter-small">
+                Al registrarte, aceptas nuestras <a href="newsletter.html">Políticas de Privacidad</a> y <a
+                    href="newsletter.html">Términos de Servicio</a>.
+            </p>
+            <div class="newsletter-group">
+                <h3>
+                    ¿No tenés una cuenta en Bluey?
+                </h3>
+                <a href="register.html">
+                    <button class="newsletter-primary">
+                        REGISTRATE AHORA
+                    </button>
+                </a>
+            </div>
+            <div class="newsletter-group">
+                <h3>Iniciar sesión</h3>
+                <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fwww.google.com%2F&ec=futura_exp_og_si_72776762_e&hl=es&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1390557286%3A1780075715765414"
+                    target="_blank">
+                    <button class="newsletter-secondary">
+                        CONTINUAR CON GOOGLE
+                    </button>
+                </a>
+            </div>
+            <a href="newsletter.html" class="newsletter-link">Para más información hacé clic aquí</a>
+        </div>
+    </div>
 
     <!--===================================================
             TOPBAR
@@ -33,62 +73,20 @@
                     <li><a href="festivales.html">Festivales</a></li>
                 </ul>
             </nav>
-            <button class="hero-email-button" aria-label="Abrir mensajes">
+            <button class="hero-email-button open-newsletter" aria-label="Abrir mensajes">
                 <img src="../img/icono-email-logo.svg" alt="icono de email" aria-hidden="true">
             </button>
         </div>
     </header>
 
     <section id="header-topbar" class="hero hero-personajes">
-        <!--===================================================
-                    NEWSLETTER MODAL
-            ===================================================  -->
         <section class="hero-mobile-bar">
             <a href="/" class="hero-logo" aria-label="Inicio">
                 <img src="../img/bluey-logo.svg" alt="Logo Bluey">
             </a>
-            <button class="hero-email-button" aria-label="Abrir mensajes" id="openNeswletter">
-                <img src="../img/icono-email-logo.svg" alt="" aria-hidden="true">
+            <button class="hero-email-button open-newsletter" aria-label="Abrir mensajes">
+                <img src="../img/icono-email-logo.svg" alt="email" aria-hidden="true">
             </button>
-            <div class="newsletter-modal" id="newsletterModal">
-                <div class="newsletter-overlay"></div>
-                <div class="newsletter-box">
-                    <button class="newsletter-close" id="closeNewsletter">
-                        <i data-lucide="x"></i>
-                    </button>
-                    <div class="newsletter-icon">
-                        <i data-lucide="send"></i>
-                    </div>
-                    <h2>Unite a nuestro<br>NEWSLETTER</h2>
-                    <p class="newsletter-description">
-                        Create un perfil para recibir novedades, ofertas exclusivas y contenido personalizado de Bluey.
-                    </p>
-                    <p class="newsletter-small">
-                        Al registrarte, aceptas nuestras <a href="newsletter.html">Políticas de Privacidad</a> y <a
-                            href="newsletter.html">Términos de Servicio</a>.
-                    </p>
-                    <div class="newsletter-group">
-                        <h3>
-                            ¿No tenés una cuenta en Bluey?
-                        </h3>
-                        <a href="register.html">
-                            <button class="newsletter-primary">
-                                REGISTRATE AHORA
-                            </button>
-                        </a>
-                    </div>
-                    <div class="newsletter-group">
-                        <h3>Iniciar sesión</h3>
-                        <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fwww.google.com%2F&ec=futura_exp_og_si_72776762_e&hl=es&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1390557286%3A1780075715765414"
-                            target="_blank">
-                            <button class="newsletter-secondary">
-                                CONTINUAR CON GOOGLE
-                            </button>
-                        </a>
-                    </div>
-                    <a href="newsletter.html" class="newsletter-link">Para más información hacé clic aquí</a>
-                </div>
-            </div>
         </section>
         <!--===================================================
                     HERO CONTENT
@@ -102,7 +100,7 @@
                     FAMILIA DE BLUEY
                 </h1>
             </div>
-            <!-- PERSONAJES SECTION SLIDES -->
+
             <!-- ===================================================
                 BLUEY SLIDER
                 =================================================== -->
@@ -125,13 +123,13 @@
                         <article class="character-slide">
                             <img src="../img/bandi.png" alt="Dad">
                             <button>
-                                DAD
+                                BANDI
                             </button>
                         </article>
                         <article class="character-slide">
                             <img src="../img/chili.png" alt="Mum">
                             <button>
-                                MUM
+                                CHILLI
                             </button>
                         </article>
                     </div>
@@ -159,9 +157,51 @@
     </nav>
 
     <main>
-        <section class="characters-section">
-            <h2 class="characters-title">Conoce a los personajes de Bluey</h2>
-            <div class="characters"></div>
+        <header class="characters-header">
+
+
+            <form class="characters-search">
+                <input type="search" id="search-character" placeholder="Buscar personaje...">
+                <button type="submit">
+                    🔍
+                </button>
+            </form>
+        </header>
+
+        <section class="characters-title">
+            <h2>Amigo de la Escuela</h2>
+        </section>
+        <section class="characters-grid">
+            <article class="character-card green">
+                <img src="../img/Winton-grid.jpg" alt="Bulldog">
+            </article>
+
+            <article class="character-card pink">
+                <img src="../img/Snickers-grid.jpg" alt="Snickers">
+            </article>
+
+            <article class="character-card orange">
+                <img src="../img/coco-grid.jpg" alt="Coco">
+            </article>
+
+            <article class="character-card blue">
+                <img src="../img/terries-grid.jpg" alt="Terriers">
+            </article>
+
+            <article class="character-card aqua">
+                <img src="../img/capypso-grid.jpg" alt="Mackenzie">
+            </article>
+
+            <article class="character-card yellow">
+                <img src="../img/missy-grid.jpg" alt="Honey">
+            </article>
+
+            <article class="character-card sky">
+                <img src="../img/indy-grid.jpg" alt="Chloe">
+            </article>
+
+        </section>
+
     </main>
     <!--===================================================
                     FOOTER 
@@ -238,7 +278,7 @@
         </div>
     </footer>
     <script src="../js/app.js"></script>
-
+    <script src="https://unpkg.com/lucide@latest"></script>
 </body>
 
 </html>

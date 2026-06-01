@@ -306,17 +306,16 @@ NEWSLETTER MODAL
     filter:drop-shadow(0 0 10px rgba(100, 210, 255, .7));
 }
 /* ===================================================
-CHARACTERS SLIDER
+PERSONAJES SLIDER
 =================================================== */
 
 .characters-slider{
     position:relative;
     overflow:hidden;
-    min-height:90vh; /* Ajusta este valor según tus necesidades esto tiene que cambiar en tablet mas arriba */
+    min-height:90vh;
     display:flex;
     align-items:center;
     justify-content:center;
-    /* padding:80px 20px; */
 }
 .slider-wrapper{
     position:relative;
@@ -326,15 +325,111 @@ CHARACTERS SLIDER
     justify-content:center;
 }
 .character-slide button{
-    /* min-width:100px;*/
     padding: 2px 12px; 
     border-radius:999px;
     background:#67639c;
     color:white;
     font-weight:900;
     letter-spacing:1px;
-   /*  transition:.25s ease; */
 } 
+/* ===================================================
+PERSONAJES GALERIA
+=================================================== */
+.characters-page{
+    width:min(82%, 1200px);
+    margin:auto;
+    padding:40px 0;
+}
+.characters-header{
+    margin-bottom:32px;
+}
+.characters-title h2{
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    color: var(--bg-general);
+    font-weight: 900;
+    line-height: 1.1;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.characters-search{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:white;
+    border-radius:999px;
+    padding:12px 18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    position:relative;
+    bottom:20px;
+    z-index: 2;
+}
+.characters-search input{
+    flex:1;
+    border:none;
+    outline:none;
+    font-size:1rem;
+    background:none;
+    position:relative;
+}
+.characters-search button{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+}
+.characters-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-areas: 
+        "green pink"
+        "orange blue"
+        "aqua yellow"
+        "aqua sky"
+    ;
+    gap:14px;
+    width:90%;
+    margin:auto;
+
+}
+.character-card{
+    border-radius:22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    background-size:140px;
+    background-repeat:repeat;
+}
+.character-card img{
+    object-fit: cover;
+}
+.green{
+    grid-area:green;
+}
+
+.pink{
+    grid-area:pink;
+}
+
+.orange{
+    grid-area:orange;
+}
+
+.blue{
+    grid-area:blue;
+}
+
+.aqua{
+    grid-area:aqua;
+}
+
+.yellow{
+    grid-area:yellow;
+}
+
+.sky{
+    grid-area:sky;
+}
 /* ===================================================
     FOOTER BLUEY
 =================================================== */
@@ -519,15 +614,7 @@ CHARACTERS SLIDER
         justify-content: center; */
         background:linear-gradient(to bottom,rgba(0, 0, 0, .08),transparent 40%),url('../img/bg-personajes-tablet.png') center center / cover no-repeat;
     }
-    .hero-content {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: min(92%, var(--container-width));
-        text-align: left;
-        padding-bottom: 80px;
-        gap: 60px;
-    }
+
     .hero-text {
         flex: 1;
     }
@@ -563,5 +650,19 @@ CHARACTERS SLIDER
     }
     .app-navigation {
         display: none;
+    }
+    .hero{
+        justify-content: center;
+        align-items: end;
+    }
+    .hero-content {
+        height: 20vh;
+        padding: 20px;
+    }
+    .hero-text h1 {
+        font-size: clamp(7rem, 7vw, 5rem);
+    }
+    .hero-text {
+        max-width: 100%;
     }
 }

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     lucide.createIcons();
-    const openNeswletter = document.getElementById("openNeswletter")
+    const openNewsletterButtons = document.querySelectorAll(".open-newsletter")
     const closeNewsletter = document.getElementById("closeNewsletter")
     const newsletterModal = document.getElementById("newsletterModal")
     const newsletteroOverlay = document.querySelector(".newsletter-overlay")
@@ -26,14 +26,21 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    openNeswletter.addEventListener('click', () => {
-        newsletterModal.classList.add('active');
-        document.body.style.overflow = 'hidden';
+    openNewsletterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            newsletterModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
     });
 
     closeNewsletter.addEventListener('click', () => {
         newsletterModal.classList.remove('active');
         document.body.style.overflow = 'auto';
+    });
+
+    newsletteroOverlay.addEventListener('click', () => {
+        newsletterModal.classList.remove('active');
+        document.body.style.overflow = '';
     });
 
     document.addEventListener('keydown', (e) => {
