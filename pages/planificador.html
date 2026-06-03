@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluey - Planificar IA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/planificadoria.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!--===================================================
+            NEWSLETTER MODAL
+    ===================================================  -->
+    <div class="newsletter-modal" id="newsletterModal">
+        <div class="newsletter-overlay"></div>
+        <div class="newsletter-box">
+            <button class="newsletter-close" id="closeNewsletter">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="newsletter-icon">
+                <i data-lucide="send"></i>
+            </div>
+            <h2>Unite a nuestro<br>NEWSLETTER</h2>
+            <p class="newsletter-description">
+                Create un perfil para recibir novedades, ofertas exclusivas y contenido personalizado de Bluey.
+            </p>
+            <p class="newsletter-small">
+                Al registrarte, aceptas nuestras <a href="newsletter.html">Políticas de Privacidad</a> y <a
+                    href="newsletter.html">Términos de Servicio</a>.
+            </p>
+            <div class="newsletter-group">
+                <h3>
+                    ¿No tenés una cuenta en Bluey?
+                </h3>
+                <a href="register.html">
+                    <button class="newsletter-primary">
+                        REGISTRATE AHORA
+                    </button>
+                </a>
+            </div>
+            <div class="newsletter-group">
+                <h3>Iniciar sesión</h3>
+                <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fwww.google.com%2F&ec=futura_exp_og_si_72776762_e&hl=es&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1390557286%3A1780075715765414"
+                    target="_blank">
+                    <button class="newsletter-secondary">
+                        CONTINUAR CON GOOGLE
+                    </button>
+                </a>
+            </div>
+            <a href="newsletter.html" class="newsletter-link">Para más información hacé clic aquí</a>
+        </div>
+    </div>
+
+    <!--===================================================
+            TOPBAR
+    ===================================================  -->
+
+    <header class="topbar">
+        <div class="topbar-container">
+            <a href="/" class="topbar-logo" aria-label="Inicio">
+                <img src="../img/bluey-logo.svg" alt="Logo de Bluey">
+            </a>
+            <nav class="topbar-navigation" aria-label="Navegación principal">
+                <ul class="topbar-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="personajes.html">Personajes</a></li>
+                    <li><a href="planificador.html">Planificador IA</a></li>
+                    <li><a href="festivales.html">Festivales</a></li>
+                </ul>
+            </nav>
+            <button class="hero-email-button open-newsletter" aria-label="Abrir mensajes">
+                <img src="../img/icono-email-logo.svg" alt="icono de email" aria-hidden="true">
+            </button>
+        </div>
+    </header>
+
+    <section id="header-topbar" class="hero hero-personajes">
+        <section class="hero-mobile-bar">
+            <a href="/" class="hero-logo" aria-label="Inicio">
+                <img src="../img/bluey-logo.svg" alt="Logo Bluey">
+            </a>
+            <button class="hero-email-button open-newsletter" aria-label="Abrir mensajes">
+                <img src="../img/icono-email-logo.svg" alt="email" aria-hidden="true">
+            </button>
+        </section>
+        <!--===================================================
+                    HERO CONTENT
+            ===================================================  -->
+        <section class="celebrate-section">
+
+            <article class="celebrate-card">
+                <h2>PLANIFICÁ CON IA</h2>
+                <p>
+                    <strong>Organizá</strong> actividades inspiradas en Bluey de forma <strong>rápida y
+                        divertida.</strong>
+                    Nuestro <strong>Planificador IA</strong> te ayuda a crear juegos, momentos en
+                    <strong>familia</strong>
+                    y experiencias <strong>personalizadas</strong> según la edad, los intereses y el tiempo
+                    disponible.
+                </p>
+
+                <p>
+                    Ya sea para una tarde de diversión, una reunión especial o una aventura
+                    en casa, la <strong>inteligencia artificial</strong> te propondrá ideas creativas para
+                    disfrutar junto a <strong>Bluey, Bingo y toda la familia Heeler.</strong>
+                </p>
+            </article>
+
+            <figure class="celebrate-image">
+                <img src="../img/familia-y-Friends.png" alt="Familia completa de Bluey">
+            </figure>
+
+        </section>
+    </section>
+    <!--===================================================
+            NAVEGACION PRINCIPAL
+    ===================================================  -->
+    <nav class="app-navigation" aria-label="Navegación rápida">
+        <ul class="app-navigation-list">
+            <li><a href="menu.html" class="app-navigation-link"><i data-lucide="menu"></i><span>Menu</span></a>
+            </li>
+            <li><a href="../index.html" class="app-navigation-link active" aria-current="page"><i
+                        data-lucide="house"></i><span>Casa</span></a></li>
+            <li><a href="personajes.html" class="app-navigation-link"><i
+                        data-lucide="ghost"></i><span>Personajes</span></a></li>
+            <li><a href="planificador.html" class="app-navigation-link"><i data-lucide="bot"></i><span>IA</span></a>
+            </li>
+            <li><a href="explore.html" class="app-navigation-link"><i data-lucide="search"></i><span>Explore</span></a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <!--===================================================
+            SECCION PRINCIPAL
+    ===================================================  -->
+        <section class="planner-section">
+
+            <section class="planner-header">
+                <h2>Mi Planificador IA</h2>
+
+                <form action="error404.html">
+                    <div class="planner-search">
+                        <i data-lucide="search"></i>
+                        <input name="buscar" type="text" placeholder="Buscar actividades...">
+                        <button type="submit">
+                            <i data-lucide="sliders-horizontal"></i>
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <article class="planner-highlight">
+
+                <figure class="planner-teacher">
+                    <img src="../img/bluey.png" alt="Bluey IA">
+                </figure>
+
+                <div class="planner-teacher-info">
+                    <h3>Bluey Asistente</h3>
+                    <p>Planificador Inteligente</p>
+
+                    <div class="planner-actions">
+                        <a href="error404.html">Ver IA</a>
+                        <a href="error404.html">Comenzar</a>
+                    </div>
+                </div>
+
+            </article>
+
+            <section class="planner-day">
+
+                <h3>
+                    Miércoles
+                    <span>18 Mayo</span>
+                </h3>
+
+                <div class="planner-timeline">
+
+                    <article class="planner-item">
+                        <span class="planner-hour">09:00</span>
+
+                        <div class="planner-card">
+                            <small>Actividad IA</small>
+
+                            <h4>
+                                Aventura interactiva con Bluey
+                            </h4>
+
+                            <div class="planner-card-footer">
+                                <span>25 participantes</span>
+
+                                <button>
+                                    <i data-lucide="heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="planner-item">
+                        <span class="planner-hour">11:00</span>
+
+                        <div class="planner-card">
+                            <small>Taller</small>
+
+                            <h4>
+                                Construcción con cartón creativo
+                            </h4>
+
+                            <div class="planner-card-footer">
+                                <span>18 participantes</span>
+
+                                <button>
+                                    <i data-lucide="heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="planner-item">
+                        <span class="planner-hour">14:00</span>
+
+                        <div class="planner-card">
+                            <small>Juego</small>
+
+                            <h4>
+                                Desafío familiar Bluey
+                            </h4>
+
+                            <div class="planner-card-footer">
+                                <span>42 participantes</span>
+
+                                <button>
+                                    <i data-lucide="heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="planner-add">
+                        <a href="">
+                            <i data-lucide="square-plus"></i>  
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+    <!--===================================================
+                    FOOTER 
+    ===================================================  -->
+    <footer class="bluey-footer">
+        <div class="footer-top">
+            <a href="#" class="footer-logo">
+                <img src="../img/bluey-logo-blanco.svg" alt="Bluey Logo">
+            </a>
+            <div class="footer-social">
+                <a class="footer-social-item" href="https://www.facebook.com/OfficialBlueyTV/" target="_blank">
+                    <img src="../img/facebook.png" alt="Logo facebook">
+                </a>
+                <a class="footer-social-item" href="https://www.instagram.com/officialbluey/" target="_blank">
+                    <img src="../img/instagram.png" alt="Logo instagram">
+                </a>
+                <a class="footer-social-item" href="https://www.tiktok.com/@bluey" target="_blank">
+                    <img src="../img/tik-tok.png" alt="Logo tik tok">
+                </a>
+                <a class="footer-social-item" href="https://open.spotify.com/intl-es/artist/6ca3AFdIIgaP4ZIW8J6zXu"
+                    target="_blank">
+                    <img src="../img/spotify.png" alt="Logo spotify">
+                </a>
+                <a class="footer-social-item" href="https://www.youtube.com/c/BlueyOfficialChannel" target="_blank">
+                    <img src="../img/youtube.png" alt="Logo youtube">
+                </a>
+                <div>
+                    <a href="newsletter.html" class="footer-subscribe">
+                        <img src="../img/carta.png" alt="Logo carta">
+                        <span>
+                            SUBSCRIBITE
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>
+                    BLUEY™ una Familia divertida
+                </p>
+                <p>
+                    Email: brayann.verona@davinci.edu.ar
+                </p>
+                <p>
+                    Edad: 31 años
+                </p>
+                <p>
+                    Alumno: Brayann Verona
+                </p>
+            </div>
+            <nav class="footer-links">
+                <ul>
+                    <li><a href="#">
+                            Contactanos
+                        </a></li>
+                    <li><a href="#">
+                            Términos y Condiciones
+                        </a></li>
+                    <li><a href="#">
+                            Politicas de privacidad
+                        </a></li>
+                    <li><a href="#">
+                            Politicas de Sesión
+                        </a></li>
+                    <li><a href="#">
+                            BBC Studios
+                        </a></li>
+                </ul>
+            </nav>
+            <a href="#header-topbar" class="footer-floating">
+                <i data-lucide="chevron-up"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="../js/app.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</body>
+
+</html>

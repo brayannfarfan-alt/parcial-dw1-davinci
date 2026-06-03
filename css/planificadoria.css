@@ -238,7 +238,6 @@ NEWSLETTER MODAL
     position: relative;
     z-index: 1;
     height: 100vh;
-    background: url('../img/bg-personajes-Mobile.png') bottom center / cover no-repeat;
 }
 
 .hero-mobile-bar {
@@ -256,52 +255,6 @@ NEWSLETTER MODAL
     background: var(--text-primary);
     border-radius: 50%;
     padding: 12px;
-}
-
-.hero-email-button img {
-    width: 26px;
-}
-
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    min-height: 80vh;
-    padding: 20px;
-}
-
-.hero-text {
-    max-width: 450px;
-    margin-bottom: 20px;
-}
-
-.hero-subtitle {
-    color: white;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 14px;
-}
-
-.hero-text h1 {
-    color: white;
-    font-size: clamp(2.5rem, 7vw, 5rem);
-    line-height: 1.05;
-    margin-bottom: 20px;
-    font-weight: 900;
-    text-shadow: 0 6px 18px rgba(0, 0, 0, .18);
-}
-
-.hero-description {
-    color: var(--text-primary);
-    font-size: 1.1rem;
-    line-height: 1.7;
-}
-
-.hero-search {
-    display: none;
 }
 
 .app-navigation {
@@ -352,161 +305,237 @@ NEWSLETTER MODAL
 }
 
 /* ===================================================
-PERSONAJES SLIDER
+    HERO SECTION PLANFICADOR
 =================================================== */
-
-.characters-slider {
-    position: relative;
-    overflow: hidden;
-    min-height: 90vh;
+.celebrate-section {
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
+    padding: 40px 20px;
+    background: url('../img/bg-celebrate-mobile.png') center center / cover no-repeat;
 }
 
-.slider-wrapper {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+.celebrate-card {
+    width: 100%;
+    max-width: 420px;
+    background: var(--text-primary);
+    border: 10px solid var(--text-primary);
+    border-radius: 40px;
+    padding: 30px 24px;
+    box-shadow: 0 10px 30px var(--shadow);
 }
 
-.character-slide button {
-    padding: 2px 12px;
-    border-radius: 999px;
-    background: #67639c;
-    color: white;
+.celebrate-card h2 {
+    color: var(--bg-general);
+    font-size: clamp(2rem, 7vw, 3rem);
     font-weight: 900;
-    letter-spacing: 1px;
+    margin-bottom: 20px;
 }
+
+.celebrate-card p {
+    color: var(--title-dark-soft);
+    line-height: 1.8;
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
 
 /* ===================================================
-PERSONAJES GALERIA
+    SECCION PLANIFICADOR
 =================================================== */
-.characters-page {
-    width: min(82%, 1200px);
-    margin: auto;
-    padding: 40px 0;
+.planner-section{
+    width:min(92%, 1100px);
+    margin:auto;
+    padding:80px 0;
 }
 
-.characters-header {
-    margin-bottom: 32px;
+.planner-header{
+    margin-bottom:30px;
 }
 
-.characters-title h2 {
-    font-size: clamp(2.5rem, 8vw, 5rem);
-    color: var(--bg-general);
-    font-weight: 900;
-    line-height: 1.1;
-    text-align: center;
-    margin-bottom: 14px;
+.planner-header h2{
+    color:var(--bg-general);
+    font-size:2.3rem;
+    font-weight:900;
+    margin-bottom:20px;
 }
 
-.characters-search {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: var(--menu-bg);
-    backdrop-filter: var(--glass-blur);
-    border-radius: 999px;
-    padding: 12px 18px;
+.planner-search{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:var(--menu-bg);
+    padding:10px 12px;
+    border-radius:999px;
     box-shadow: var(--shadow);
-    position: relative;
-    bottom: 20px;
-    z-index: 2;
-    width: 90%;
-    margin: auto;
+}
+.planner-search i{
+    color:var(--paragraph-dark);
 }
 
-.characters-search input {
-    flex: 1;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    background: none;
-    position: relative;
+.planner-search input{
+    flex:1;
+    border:none;
+    outline:none;
+    background:none;
+    font-family:inherit;
+    color: var(--bluey-sky-bottom);
+}
+.planner-search input::placeholder{
+    color: var(--bluey-sky-bottom);
+}
+.planner-search button{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:var(--bg-dark-soft);
+    color:white;
+}
+
+.planner-highlight{
+    box-shadow: var(--shadow);
+    border-radius:28px;
+    padding:25px;
+    color:var(--title-dark);
+    margin-bottom:40px;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    gap:20px;
+    backdrop-filter: blur(14px);
+}
+.planner-teacher-info h3{
+    font-size:1.4rem;
+    margin-bottom:6px;
     color: var(--text-primary);
 }
 
-.characters-search input::placeholder {
+.planner-teacher-info p{
+    opacity:.8;
     color: var(--text-primary);
 }
 
-.characters-search button {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-.characters-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-        "green pink"
-        "orange blue"
-        "aqua yellow"
-        "aqua sky"
-    ;
-    gap: 14px;
-    width: 90%;
-    margin: auto;
-}
-
-.characters-grid>a {
-    display: contents;
-}
-
-.character-card {
-    border-radius: 22px;
-    display: flex;
+.planner-actions{
+    margin-top:18px;
+    display:flex;
+    gap:12px;
+    justify-content:center;
     align-items: center;
+}
+
+.planner-actions a{
+    border:none;
+    padding:8px;
+    border-radius:999px;
+    font-weight:800;
+    background:var(--text-primary);
+    color:var(--title-dark-soft);
+}
+
+.planner-day h3{
+    color:var(--title-dark-soft);
+    font-size:1.5rem;
+    margin-bottom:25px;
+}
+
+.planner-day h3 span{
+    color:var(--paragraph-dark);
+    font-weight:400;
+}
+
+.planner-timeline{
+    position:relative;
+}
+
+.planner-timeline::before{
+    content:"";
+    position:absolute;
+    left:20px;
+    top:0;
+    bottom:0;
+    width:2px;
+    background:#c8c8c8;
+}
+
+.planner-item{
+    display:flex;
+    gap:20px;
+    margin-bottom:24px;
+    position:relative;
+}
+
+.planner-item::before{
+    content:"";
+    position:absolute;
+    left:15px;
+    top:16px;
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background:var(--icon-inactive);
+}
+
+.planner-hour{
+    width:50px;
+    font-size:.85rem;
+    font-weight:800;
+    color:var(--icon-inactive);
+}
+
+.planner-card{
+    flex:1;
+    background:var(--bg-dark-soft);
+    border-radius:24px;
+    padding:20px;
+    box-shadow:var(--shadow);
+}
+
+.planner-card small{
+    color:var(--bg-general);
+    font-weight:700;
+}
+
+.planner-card h4{
+    color:var(--text-primary);
+    margin:10px 0 18px;
+    line-height:1.4;
+}
+
+.planner-card-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.planner-card-footer span{
+    font-size:.8rem;
+    color:var(--paragraph-dark);
+}
+
+.planner-card-footer button{
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    background:#eef6fd;
+    color:var(--title-dark-soft);
+}
+.planner-add{
+    display: flex;
     justify-content: center;
-    overflow: hidden;
-    background-size: 140px;
-    background-repeat: repeat;
+    align-items: center;
+    margin-top: 1rem;
 }
-
-.character-card img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    max-height: 100%;
-    transition: transform .35s ease;
-    will-change: transform;
+.planner-add a{
+    display: flex;
+    background: var(--bg-dark);
+    padding:10px;
+    border-radius: 15px;
+    color: var(--text-primary);
+    font-weight: 900;
+    box-shadow: var(--shadow);
 }
-.second_item{
-    margin-top: 7rem;
-}
-.green {
-    grid-area: green;
-}
-
-.pink {
-    grid-area: pink;
-}
-
-.orange {
-    grid-area: orange;
-}
-
-.blue {
-    grid-area: blue;
-}
-
-.aqua {
-    grid-area: aqua;
-}
-
-.yellow {
-    grid-area: yellow;
-}
-
-.sky {
-    grid-area: sky;
-}
-
 /* ===================================================
     FOOTER BLUEY
 =================================================== */
@@ -637,10 +666,6 @@ PERSONAJES GALERIA
     MEDIA QUERIES
 =================================================== */
 @media (min-width:768px) {
-    .hero {
-        background: url('../img/bg-personajes-tablet.png') center center / cover no-repeat;
-    }
-
     .app-navigation {
         max-width: 680px;
         border-radius: 34px;
@@ -656,16 +681,23 @@ PERSONAJES GALERIA
         height: 28px;
     }
 
-    .characters-slider {
-        min-height: 70vh;
+    .celebrate-card {
+        max-width: 720px;
     }
-
-    .characters-grid {
-        width: min(75%, 1200px);
-    }
+    .planner-highlight{
+    
+    flex-direction:column;
+}
 }
 
 @media (min-width:1024px) {
+    .hero-personajes {
+        position: relative;
+        z-index: 1;
+        height: 100vh;
+        background: url('../img/Celebrate.png') top center / cover no-repeat;
+    }
+
     .topbar {
         display: block;
         position: fixed;
@@ -716,13 +748,6 @@ PERSONAJES GALERIA
         display: none;
     }
 
-    .hero {
-        display: flex;
-        /* align-items: flex-end;
-        justify-content: center; */
-        background: linear-gradient(to bottom, rgba(0, 0, 0, .08), transparent 40%), url('../img/bg-personajes-tablet.png') center center / cover no-repeat;
-    }
-
     .app-navigation {
         width: auto;
         max-width: none;
@@ -748,59 +773,50 @@ PERSONAJES GALERIA
     }
 
     .app-navigation-link.active {
-        background:
-            rgba(100, 210, 255, .12);
-    }
-
-    .main-content {
-        padding-top: 120px;
-    }
-
-    .hero-text h1 {
-        font-size: clamp(2.5rem, 2vw, 5rem);
+        background: rgba(100, 210, 255, .12);
     }
 
     .app-navigation {
         display: none;
     }
 
-    .hero {
-        justify-content: center;
-        align-items: end;
-    }
-    .hero-text {
-        flex: 1;
-        max-width: 100%;
-        margin-top: 2rem;
-    }
-    .hero-content {
-        height: 10vh;
-        padding: 20px;
-        justify-content: center;
+    .celebrate-image {
+        display: none;
     }
 
-    .hero-text h1 {
-        font-size: clamp(2rem, 7vw, 5rem);
-    }
-    .hero-subtitle {
-        margin-top: 9rem;
-    }
-    .characters-grid {
-        width: min(80%, 900px);
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas:
-            "green aqua pink sky"
-            "blue aqua yellow orange"
-        ;
-        gap: 12px;
+    .celebrate-card {
+        max-width: 720px;
     }
 
-    .characters-search {
-        width: 30%;
-        margin: auto;
+    .celebrate-section {
+        align-items: start;
+        margin-left: 10rem;
+    }
+        .planner-section{
+        display:grid;
+        grid-template-columns:350px 1fr;
+        gap:60px;
+        align-items:start;
     }
 
-    .character-card:hover img {
-        transform: scale(1.05);
+    .planner-header{
+        grid-column:1;
     }
+
+    .planner-highlight{
+        grid-column:1;
+        position:sticky;
+        top:120px;
+    }
+
+    .planner-day{
+        grid-column:2;
+    }
+
+    .planner-header h2{
+        font-size:3rem;
+        line-height:1;
+        text-align: center;
+    }
+    
 }
