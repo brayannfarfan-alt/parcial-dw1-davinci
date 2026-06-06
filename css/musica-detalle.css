@@ -305,189 +305,178 @@ NEWSLETTER MODAL
 }
 
 /* ===================================================
-    HERO SECTION PLANFICADOR
+    HERO BLUEY
 =================================================== */
-.celebrate-section {
-    min-height: 100vh;
+.hero-personajes {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+}
+
+.hero-mobile-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 18px;
+}
+
+.hero-logo {
+    width: 140px;
+}
+
+.hero-email-button {
+    background: var(--text-primary);
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.app-navigation {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    z-index: 1000;
+    width: 92%;
+    max-width: 480px;
+    padding: 14px 12px;
+    border-radius: 28px;
+    background: var(--menu-bg);
+    border: 1px solid var(--menu-border);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    box-shadow: var(--shadow);
+}
+
+.app-navigation-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.app-navigation-link {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 40px 20px;
+    gap: 6px;
+    color: var(--icon-inactive);
+    font-size: .75rem;
+    transition: .25s ease;
 }
 
-.celebrate-card {
-    width: 100%;
-    max-width: 420px;
-    background: var(--text-primary);
-    border: 10px solid var(--text-primary);
-    border-radius: 40px;
-    padding: 30px 24px;
-    box-shadow: var(--shadow);
-    box-sizing: border-box;
+.app-navigation-link i {
+    width: 24px;
+    height: 24px;
 }
 
-.celebrate-card h2 {
-    color: var(--bg-general);
-    font-size: clamp(2rem, 7vw, 3rem);
-    font-weight: 900;
-    margin-bottom: 20px;
+.app-navigation-link.active {
+    color: white;
 }
 
-.celebrate-card p {
-    color: var(--title-dark-soft);
-    line-height: 1.8;
-    font-size: 1rem;
-    margin-bottom: 16px;
+.app-navigation-link.active i {
+    color: var(--icon-active);
+    filter: drop-shadow(0 0 10px rgba(100, 210, 255, .7));
 }
 
-.celebrate-album {
-    padding: 20px 0px 10px 20px;
-}
-
-.celebrate-album-title {
-    color: var(--bg-general);
-    font-size: .7rem;
-    font-weight: 900;
-    text-transform: uppercase;
-}
-
-.celebrate-album-subtitle {
-    color: var(--bg-general);
-    font-size: 2rem;
-    font-weight: 900;
-    text-transform: uppercase;
-}
-.celebrate-album-description{
-    font-size: .7rem;
-    color: var(--bg-dark-soft);
-}
-.celebrate-album-btn{
-    background: var(--bg-dark-soft);
-    color: var(--text-primary);
-    padding: 10px;
-    position: relative;
-    top: 1rem;
-    border-radius: 22px;
-}
-.celebrate-image{
-    position: relative;
-    bottom: 4rem;
-}
 /* ===================================================
-    SECCION MUSICA
+    SECCION DE MUSICA DETALLE
 =================================================== */
-.music-section{
-    width:min(92%, 1200px);
-    margin:4rem auto;
-    padding:80px 0;
+.music-player {
+    width: min(92%, 420px);
+    margin: auto;
+    padding: 60px 0;
 }
 
-.music-header{
-    margin-bottom:40px;
+.music-player-cover {
+    width: 220px;
+    margin: 0 auto -45px;
+    position: relative;
+    z-index: 2;
 }
 
-.music-header h2{
-    color:var(--title-dark-soft);
-    font-size:2.4rem;
-    font-weight:900;
-    margin-bottom:12px;
-}
-
-.music-header p{
-    color:var(--paragraph-dark);
-    line-height:1.7;
-}
-
-.music-category{
-    margin-bottom:50px;
-}
-
-.music-category-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:20px;
-}
-
-.music-category-header h3{
-    color:var(--title-dark-soft);
-    font-size:1.5rem;
-}
-
-.music-category-header a{
-    color:var(--bg-general);
-    font-weight:800;
-}
-
-.music-list{
-    display:flex;
-    flex-direction:column;
-    gap:16px;
-}
-
-.music-card{
-    display:flex;
-    align-items:center;
-    gap:15px;
-    background:var(--bg-dark-soft);
-    backdrop-filter:blur(10px);
-    border-radius:22px;
-    padding:12px;
-    box-shadow:var(--shadow);
-}
-
-.music-card img{
-    /* width:70px; */
-    height:70px;
-    object-fit:cover;
-    border-radius:16px;
-}
-.music-info{
+.music-player-cover img {
     width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 34px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .15);
+}
+
+.music-player-card {
+    background: rgba(255, 255, 255, .55);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, .45);
+
+    border-radius: 42px;
+
+    padding:
+        80px 24px 30px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, .08);
+}
+
+.music-player-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.music-player-header h2 {
+    color: var(--title-dark-soft);
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+
+.music-player-header p {
+    color: var(--paragraph-dark);
+    font-size: 1rem;
+}
+
+.music-player-actions {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.music-player-actions a {
+    display: flex;
     align-items: center;
-}
-.misic-controls a{
-    color: var(--text-primary);
-}
-.music-info h4{
-    color:var(--text-primary);
-    margin-bottom:5px;
+    gap: 18px;
+
+    padding: 14px 18px;
+
+    border-radius: 18px;
+
+    color: var(--title-dark-soft);
+
+    transition: .25s ease;
 }
 
-.music-info span{
-    color:var(--paragraph-dark);
-    font-size:.9rem;
+.music-player-actions a:hover {
+    background: rgba(166, 218, 247, .25);
 }
 
-.album-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:16px;
+.music-player-actions i {
+    width: 24px;
+    height: 24px;
 }
 
-.album-card{
-    background:var(--bg-dark-soft);
-    background-size: cover;
-
-    border-radius:22px;
-    overflow:hidden;
-    box-shadow: var(--shadow);
+.music-player-actions span {
+    font-weight: 700;
 }
 
-.album-card img{
-    /* width:100%; */
-    /* aspect-ratio:1/1; */
-    object-fit:cover;
+.music-player-footer {
+    margin-top: 30px;
+    text-align: center;
 }
 
-.album-card h4{
-    padding:14px;
-    color:var(--text-primary);
-    font-size:.95rem;
+.music-player-footer a {
+    background: none;
+    color: var(--title-dark-soft);
+
+    font-size: 1rem;
+    font-weight: 800;
 }
+
 /* ===================================================
     FOOTER BLUEY
 =================================================== */
@@ -614,6 +603,7 @@ NEWSLETTER MODAL
     height: 28px;
 }
 
+
 /* ===================================================
     MEDIA QUERIES
 =================================================== */
@@ -632,28 +622,9 @@ NEWSLETTER MODAL
         width: 28px;
         height: 28px;
     }
-
-    .celebrate-card {
-        max-width: 620px;
-    }
-        .music-list{
-        display:grid;
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .album-grid{
-        grid-template-columns:repeat(4,1fr);
-    }
 }
 
 @media (min-width:1024px) {
-    .hero-personajes {
-        position: relative;
-        z-index: 1;
-        height: 100vh;
-        background: url('../img/musica-desktop.png') center center / cover no-repeat;
-    }
-
     .topbar {
         display: block;
         position: fixed;
@@ -735,46 +706,94 @@ NEWSLETTER MODAL
         display: none;
     }
 
-    .celebrate-image {
+    .music-player {
+        margin-top: 7rem;
+        width: min(90%, 1100px);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: stretch;
+    }
+    .music-player-cover {
+        width: 100%;
+        height: 100%;
+        min-height: 560px;
+        margin: 0;
+        border-radius: 42px;
+        overflow: hidden;
+        background-image: url('../img/album-lover.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        box-shadow:var(--shadow);
+    }
+    .music-player-cover::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:linear-gradient(to bottom,
+                rgba(0, 0, 0, .15),
+                rgba(0, 0, 0, .35));
+    }
+    .music-player-cover img {
         display: none;
     }
 
-    .celebrate-section {
-        align-items: start;
-        margin-left: 15rem;
+    .music-player-card {
+        min-height: 560px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px;
+        border-radius: 42px;
+        background:rgba(255, 255, 255, .65);
+        backdrop-filter: blur(20px);
+        box-shadow:var(--shadow);
     }
 
-    .celebrate-card {
-        max-width: 620px;
+    .music-player-header {
+        text-align: left;
+        margin-bottom: 40px;
     }
 
-    .music-header{
-        text-align:center;
-        max-width:800px;
-        margin:0 auto 60px;
+    .music-player-header h2 {
+        font-size: 2.8rem;
+        margin-bottom: 10px;
     }
 
-    .music-header h2{
-        font-size:4rem;
+    .music-player-header p {
+        font-size: 1.2rem;
     }
 
-    .music-list{
-        grid-template-columns:repeat(3,1fr);
+    .music-player-actions {
+        gap: 16px;
     }
 
-    .music-card{
-        transition:.25s ease;
+    .music-player-actions a {
+        padding: 18px 22px;
+        border-radius: 20px;
+        font-size: 1.05rem;
     }
 
-    .music-card:hover{
-        transform:translateY(-6px);
+    .music-player-actions a:hover {
+        background: rgba(166, 218, 247, .25);
+        transform: translateX(8px);
     }
 
-    .album-card{
-        transition:.25s ease;
+    .music-player-footer {
+        margin-top: 40px;
+        text-align: left;
     }
 
-    .album-card:hover{
-        transform:translateY(-6px);
+    .music-player-footer button {
+        padding: 14px 28px;
+        border-radius: 999px;
+        background: var(--title-dark-soft);
+        color: var(--text-primary);
+        font-weight: 900;
+    }
+
+    .music-player-footer button:hover {
+        transform: translateY(-2px);
     }
 }
