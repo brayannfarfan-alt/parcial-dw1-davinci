@@ -358,11 +358,13 @@ NEWSLETTER MODAL
     font-weight: 900;
     text-transform: uppercase;
 }
-.celebrate-album-description{
+
+.celebrate-album-description {
     font-size: .7rem;
     color: var(--bg-dark-soft);
 }
-.celebrate-album-btn{
+
+.celebrate-album-btn {
     background: var(--bg-dark-soft);
     color: var(--text-primary);
     padding: 10px;
@@ -370,124 +372,130 @@ NEWSLETTER MODAL
     top: 1rem;
     border-radius: 22px;
 }
-.celebrate-image{
+
+.celebrate-image {
     position: relative;
     bottom: 4rem;
 }
+
 /* ===================================================
     SECCION MUSICA
 =================================================== */
-.music-section{
-    width:min(92%, 1200px);
-    margin:4rem auto;
-    padding:80px 0;
+.music-section {
+    width: min(92%, 1200px);
+    margin: 4rem auto;
+    padding: 80px 0;
 }
 
-.music-header{
-    margin-bottom:40px;
+.music-header {
+    margin-bottom: 40px;
 }
 
-.music-header h2{
-    color:var(--title-dark-soft);
-    font-size:2.4rem;
-    font-weight:900;
-    margin-bottom:12px;
+.music-header h2 {
+    color: var(--title-dark-soft);
+    font-size: 2.4rem;
+    font-weight: 900;
+    margin-bottom: 12px;
 }
 
-.music-header p{
-    color:var(--paragraph-dark);
-    line-height:1.7;
+.music-header p {
+    color: var(--paragraph-dark);
+    line-height: 1.7;
 }
 
-.music-category{
-    margin-bottom:50px;
+.music-category {
+    margin-bottom: 50px;
 }
 
-.music-category-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:20px;
+.music-category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.music-category-header h3{
-    color:var(--title-dark-soft);
-    font-size:1.5rem;
+.music-category-header h3 {
+    color: var(--title-dark-soft);
+    font-size: 1.5rem;
 }
 
-.music-category-header a{
-    color:var(--bg-general);
-    font-weight:800;
+.music-category-header a {
+    color: var(--bg-general);
+    font-weight: 800;
 }
 
-.music-list{
-    display:flex;
-    flex-direction:column;
-    gap:16px;
+.music-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.music-card{
-    display:flex;
-    align-items:center;
-    gap:15px;
-    background:var(--bg-dark-soft);
-    backdrop-filter:blur(10px);
-    border-radius:22px;
-    padding:12px;
-    box-shadow:var(--shadow);
+.music-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--bg-dark-soft);
+    backdrop-filter: blur(10px);
+    border-radius: 22px;
+    padding: 12px;
+    box-shadow: var(--shadow);
 }
 
-.music-card img{
+.music-card img {
     /* width:70px; */
-    height:70px;
-    object-fit:cover;
-    border-radius:16px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 16px;
 }
-.music-info{
+
+.music-info {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.misic-controls a{
+
+.misic-controls a {
     color: var(--text-primary);
 }
-.music-info h4{
-    color:var(--text-primary);
-    margin-bottom:5px;
+
+.music-info h4 {
+    color: var(--text-primary);
+    margin-bottom: 5px;
 }
 
-.music-info span{
-    color:var(--paragraph-dark);
-    font-size:.9rem;
+.music-info span {
+    color: var(--paragraph-dark);
+    font-size: .9rem;
 }
 
-.album-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:16px;
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
 }
 
-.album-card{
-    background:var(--bg-dark-soft);
+.album-card {
+    background: var(--bg-dark-soft);
     background-size: cover;
 
-    border-radius:22px;
-    overflow:hidden;
+    border-radius: 22px;
+    overflow: hidden;
     box-shadow: var(--shadow);
 }
 
-.album-card img{
+.album-card img {
     /* width:100%; */
     /* aspect-ratio:1/1; */
-    object-fit:cover;
+    object-fit: cover;
 }
 
-.album-card h4{
-    padding:14px;
-    color:var(--text-primary);
-    font-size:.95rem;
+.album-card h4 {
+    padding: 14px;
+    color: var(--text-primary);
+    font-size: .95rem;
 }
+
 /* ===================================================
     FOOTER BLUEY
 =================================================== */
@@ -636,13 +644,23 @@ NEWSLETTER MODAL
     .celebrate-card {
         max-width: 620px;
     }
-        .music-list{
-        display:grid;
-        grid-template-columns:repeat(2,1fr);
+    .celebrate-section{
+        align-items: self-start;
     }
-
-    .album-grid{
-        grid-template-columns:repeat(4,1fr);
+    .celebrate-image{
+        position: relative;
+        bottom: 6rem;
+        z-index: -10000;
+    }
+    .music-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .music-section{
+        padding: 120px 0px;
+    }
+    .album-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -748,33 +766,33 @@ NEWSLETTER MODAL
         max-width: 620px;
     }
 
-    .music-header{
-        text-align:center;
-        max-width:800px;
-        margin:0 auto 60px;
+    .music-header {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 60px;
     }
 
-    .music-header h2{
-        font-size:4rem;
+    .music-header h2 {
+        font-size: 4rem;
     }
 
-    .music-list{
-        grid-template-columns:repeat(3,1fr);
+    .music-list {
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .music-card{
-        transition:.25s ease;
+    .music-card {
+        transition: .25s ease;
     }
 
-    .music-card:hover{
-        transform:translateY(-6px);
+    .music-card:hover {
+        transform: translateY(-6px);
     }
 
-    .album-card{
-        transition:.25s ease;
+    .album-card {
+        transition: .25s ease;
     }
 
-    .album-card:hover{
-        transform:translateY(-6px);
+    .album-card:hover {
+        transform: translateY(-6px);
     }
 }

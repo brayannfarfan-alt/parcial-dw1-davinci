@@ -377,104 +377,172 @@ NEWSLETTER MODAL
     filter: drop-shadow(0 0 10px rgba(100, 210, 255, .7));
 }
 
-/* ===================================================
-    SECCION DE MUSICA DETALLE
-=================================================== */
-.music-player {
-    width: min(92%, 420px);
-    margin: auto;
-    padding: 60px 0;
+/* =====================================
+   CHARACTER HERO
+===================================== */
+
+.character-detail {
+    position: relative;
+    min-height: 80vh;
+    padding: 2rem 1.2rem;
 }
 
-.music-player-cover {
-    width: 220px;
-    margin: 0 auto -45px;
+.character-hero {
+    position: relative;
+}
+
+.character-name-bg {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: .9;
+    color: #f77e63;
+    ;
+    opacity: .15;
+    z-index: -1;
+    pointer-events: none;
+    text-transform: uppercase;
+    text-shadow:
+        -3px -3px 0 white,
+        3px -3px 0 white,
+        -3px 3px 0 white,
+        3px 3px 0 white;
+    display: block;
+}
+
+.character-info {
     position: relative;
     z-index: 2;
 }
 
-.music-player-cover img {
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 34px;
-    box-shadow: 0 18px 40px rgba(0, 0, 0, .15);
+.character-info h2 {
+    display: none;
 }
 
-.music-player-card {
-    background: rgba(255, 255, 255, .55);
-    backdrop-filter: blur(18px);
-    border: 1px solid rgba(255, 255, 255, .45);
-
-    border-radius: 42px;
-
-    padding:
-        80px 24px 30px;
-
-    box-shadow:
-        0 15px 40px rgba(0, 0, 0, .08);
-}
-
-.music-player-header {
-    text-align: center;
-    margin-bottom: 35px;
-}
-
-.music-player-header h2 {
+.character-info p {
     color: var(--title-dark-soft);
-    font-size: 1.7rem;
-    font-weight: 900;
-}
-
-.music-player-header p {
-    color: var(--paragraph-dark);
-    font-size: 1rem;
-}
-
-.music-player-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.music-player-actions a {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-
-    padding: 14px 18px;
-
-    border-radius: 18px;
-
-    color: var(--title-dark-soft);
-
-    transition: .25s ease;
-}
-
-.music-player-actions a:hover {
-    background: rgba(166, 218, 247, .25);
-}
-
-.music-player-actions i {
-    width: 24px;
-    height: 24px;
-}
-
-.music-player-actions span {
-    font-weight: 700;
-}
-
-.music-player-footer {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.music-player-footer a {
-    background: none;
-    color: var(--title-dark-soft);
-
-    font-size: 1rem;
     font-weight: 800;
+    line-height: 1.5;
+    font-size: .95rem;
+    text-align: center;
+}
+/* =====================================
+   BIOGRAFÍA
+===================================== */
+.character-main{
+    padding: 2rem 1.25rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.character-biography{
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+}
+
+.character-story{
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+}
+
+.character-story p{
+    color:var(--title-dark-soft);
+    font-size:1.05rem;
+    line-height:1.8;
+}
+
+.character-story strong{
+    color:var(--title-dark-soft);
+    font-weight:900;
+}
+
+/* =====================================
+   FACTS CARD
+===================================== */
+
+.facts-card{
+    position:relative;
+    background:#f7f7fb;
+    border-radius:36px;
+    border:8px solid rgba(255,255,255,.7);
+    box-shadow:var(--shadow);
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 28px;
+    min-height: 362px;
+    /* min-width: 362px; */
+}
+
+.facts-card h2{
+    font-size:2rem;
+    margin-bottom:1.5rem;
+    color:var(--title-dark-soft);
+    font-weight:900;
+    padding: 5px;
+}
+.facts-card div h3{
+    color: var(--title-dark-soft);
+    font-weight: 900;
+    line-height: 1.2;
+}
+.facts-card div p{
+    color: var(--title-dark-soft);
+}
+.facts-image{
+    position: absolute;
+    top: 48%;
+    transform: translateY(-50%);
+    left: 9rem;
+    z-index: 1;
+}
+
+/* =====================================
+   FRASE
+===================================== */
+
+.character-quote{
+    margin-top:2rem;
+    background:white;
+    border:5px solid var(--title-dark-soft);
+    border-radius:999px;
+    padding:1rem;
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+
+.quote-icon{
+    flex-shrink:0;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:var(--title-dark-soft);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.quote-icon i{
+    width:28px;
+    height:28px;
+}
+
+.quote-content h3{
+    color:var(--title-dark-soft);
+    font-size:1.1rem;
+    line-height:1.3;
+    font-weight:900;
+}
+
+.quote-content p{
+    margin-top:.3rem;
+    color:var(--paragraph-dark);
+    font-size:.85rem;
 }
 
 /* ===================================================
@@ -622,6 +690,73 @@ NEWSLETTER MODAL
         width: 28px;
         height: 28px;
     }
+
+    .character-hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        width: 90%;
+    }
+    .character-name-bg {
+        font-size: 9rem;
+        top: 10%;
+        left: 55%;
+    }
+
+    .character-info h2 {
+        display: block;
+        font-size: 7rem;
+        line-height: .9;
+        color: #f77e63;
+        font-weight: 900;
+        text-shadow:
+            -3px -3px 0 white,
+            3px -3px 0 white,
+            -3px 3px 0 white,
+            3px 3px 0 white;
+        margin-bottom: 1rem;
+    }
+
+    .character-info p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        text-align: start;
+    }
+    .character-facts{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .character-story p{
+        font-size: 1.2rem;
+    }
+    .facts-card{
+        width: 362px;
+        z-index: 1;
+    }
+    .facts-backcard{
+        min-height: 362px;
+        width: 362px;
+        z-index: -1;
+        left: 20px;
+        top: 34px;
+        transform: rotate(4deg);
+    }
+    .facts-backcard-content{
+        background-image: url(../img/bg-personaje-descripcion.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+        border: 11px solid #fff;
+        border-radius: 54px;
+        min-height: 362px;
+        width: 362px;
+        position: absolute;
+        bottom: 22rem;
+        left: 4rem;
+    }
 }
 
 @media (min-width:1024px) {
@@ -706,84 +841,24 @@ NEWSLETTER MODAL
         display: none;
     }
 
-    .music-player {
-        margin-top: 7rem;
-        width: min(90%, 1400px);
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-        align-items: stretch;
+    .character-detail {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding-top: 12rem;
     }
-    .music-player-cover {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        border-radius: 42px;
-        overflow: hidden;
-        background-image: url('../img/bg-musica-detalle.png');
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        box-shadow:var(--shadow);
-    }
-    .music-player-cover img {
-        display: none;
-    }
-
-    .music-player-card {
-        min-height: 560px;
+    .character-biography-content{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding: 60px;
-        border-radius: 42px;
-        backdrop-filter: blur(20px);
-        box-shadow:var(--shadow);
     }
-
-    .music-player-header {
-        text-align: left;
-        margin-bottom: 40px;
+    .character-biography{
+        flex-direction: row;
     }
-
-    .music-player-header h2 {
-        font-size: 2.8rem;
-        margin-bottom: 10px;
+    .facts-card{
+        min-height: 500px;
     }
-
-    .music-player-header p {
-        font-size: 1.2rem;
-    }
-
-    .music-player-actions {
-        gap: 16px;
-    }
-
-    .music-player-actions a {
-        padding: 18px 22px;
-        border-radius: 20px;
-        font-size: 1.05rem;
-    }
-
-    .music-player-actions a:hover {
-        background: rgba(166, 218, 247, .25);
-        transform: translateX(8px);
-    }
-
-    .music-player-footer {
-        margin-top: 40px;
-        text-align: left;
-    }
-
-    .music-player-footer button {
-        padding: 14px 28px;
-        border-radius: 999px;
-        background: var(--title-dark-soft);
-        color: var(--text-primary);
-        font-weight: 900;
-    }
-
-    .music-player-footer button:hover {
-        transform: translateY(-2px);
+    .facts-backcard-content{
+        min-height: 500px;
     }
 }
