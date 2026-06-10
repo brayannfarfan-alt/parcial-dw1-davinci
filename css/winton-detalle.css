@@ -237,7 +237,7 @@ NEWSLETTER MODAL
 .hero-personajes {
     position: relative;
     z-index: 1;
-    height: 100vh;
+    /* padding-bottom:2rem; */
 }
 
 .hero-mobile-bar {
@@ -310,7 +310,7 @@ NEWSLETTER MODAL
 .hero-personajes {
     position: relative;
     z-index: 1;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .hero-mobile-bar {
@@ -383,8 +383,6 @@ NEWSLETTER MODAL
 
 .character-detail {
     position: relative;
-    min-height: 80vh;
-    padding: 2rem 1.2rem;
 }
 
 .character-hero {
@@ -429,70 +427,68 @@ NEWSLETTER MODAL
     font-size: .95rem;
     text-align: center;
 }
-/* =====================================
-   BIOGRAFÍA
-===================================== */
-.character-main{
+.character-main {
     padding: 2rem 1.25rem;
     max-width: 1300px;
     margin: 0 auto;
 }
-.character-biography{
-    display:flex;
-    flex-direction:column;
-    gap:2rem;
+
+.character-biography {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+    margin: auto;
 }
 
-.character-story{
-    display:flex;
-    flex-direction:column;
-    gap:1.5rem;
+.character-story {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.character-story p{
-    color:var(--title-dark-soft);
-    font-size:1.05rem;
-    line-height:1.8;
+.character-story p {
+    color: var(--title-dark-soft);
+    font-size: 1.05rem;
+    line-height: 1.8;
 }
 
-.character-story strong{
-    color:var(--title-dark-soft);
-    font-weight:900;
+.character-story strong {
+    color: var(--title-dark-soft);
+    font-weight: 900;
 }
-
-/* =====================================
-   FACTS CARD
-===================================== */
-
-.facts-card{
-    position:relative;
-    background:#f7f7fb;
-    border-radius:36px;
-    border:8px solid rgba(255,255,255,.7);
-    box-shadow:var(--shadow);
-    padding-left: 33px;
+.facts-card {
+    position: relative;
+    background: #f7f7fb;
+    border-radius: 36px;
+    border: 8px solid rgba(255, 255, 255, .7);
+    box-shadow: var(--shadow);
+    padding-left: 23px;
     padding-right: 33px;
     padding-bottom: 28px;
     min-height: 362px;
-    /* min-width: 362px; */
+    box-sizing: border-box;
 }
 
-.facts-card h2{
-    font-size:2rem;
-    margin-bottom:1.5rem;
-    color:var(--title-dark-soft);
-    font-weight:900;
+.facts-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--title-dark-soft);
+    font-weight: 900;
     padding: 5px;
 }
-.facts-card div h3{
+
+.facts-card div h3 {
     color: var(--title-dark-soft);
     font-weight: 900;
     line-height: 1.2;
 }
-.facts-card div p{
+
+.facts-card div p {
     color: var(--title-dark-soft);
 }
-.facts-image{
+
+.facts-image {
     position: absolute;
     top: 48%;
     transform: translateY(-50%);
@@ -500,49 +496,76 @@ NEWSLETTER MODAL
     z-index: 1;
 }
 
-/* =====================================
-   FRASE
-===================================== */
-
-.character-quote{
-    margin-top:2rem;
-    background:white;
-    border:5px solid var(--title-dark-soft);
-    border-radius:999px;
-    padding:1rem;
-    display:flex;
-    align-items:center;
-    gap:1rem;
+.character-quote {
+    margin-top: 2rem;
+    background: white;
+    border: 5px solid var(--title-dark-soft);
+    border-radius: 999px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-.quote-icon{
-    flex-shrink:0;
-    width:65px;
-    height:65px;
-    border-radius:50%;
-    background:var(--title-dark-soft);
-    color:white;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+.quote-icon {
+    flex-shrink: 0;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: var(--title-dark-soft);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.quote-icon i{
-    width:28px;
-    height:28px;
+.quote-icon i {
+    width: 28px;
+    height: 28px;
 }
 
-.quote-content h3{
+.quote-content h3 {
+    color: var(--title-dark-soft);
+    font-size: 1.1rem;
+    line-height: 1.3;
+    font-weight: 900;
+}
+
+.quote-content p {
+    margin-top: .3rem;
+    color: var(--paragraph-dark);
+    font-size: .85rem;
+}
+/* ===================================================
+     BLUEY VIDEO
+=================================================== */
+.character-video{
+    margin-top:4rem;
+    padding-inline:1rem;
+}
+
+.character-video h2{
     color:var(--title-dark-soft);
-    font-size:1.1rem;
-    line-height:1.3;
+    font-size:2rem;
     font-weight:900;
+    margin-bottom:1.5rem;
+    text-align:center;
+}
+.video-container{
+    width:100%;
+    max-width:900px;
+    margin:auto;
+    aspect-ratio:16/9;
+    overflow:hidden;
+    border-radius:32px;
+    box-shadow:var(--shadow);
+    border:6px solid rgba(255,255,255,.4);
 }
 
-.quote-content p{
-    margin-top:.3rem;
-    color:var(--paragraph-dark);
-    font-size:.85rem;
+.video-container iframe{
+    width:100%;
+    height:100%;
+    border:none;
 }
 
 /* ===================================================
@@ -698,6 +721,7 @@ NEWSLETTER MODAL
         gap: 2rem;
         width: 90%;
     }
+
     .character-name-bg {
         font-size: 9rem;
         top: 10%;
@@ -723,39 +747,45 @@ NEWSLETTER MODAL
         line-height: 1.7;
         text-align: start;
     }
-    .character-facts{
+
+    .character-facts {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         position: relative;
     }
-    .character-story p{
+
+    .character-story p {
         font-size: 1.2rem;
     }
-    .facts-card{
+
+    .facts-card {
         width: 362px;
         z-index: 1;
     }
-    .facts-backcard{
-        min-height: 362px;
+
+    .facts-backcard {
+        /* min-height: 362px; */
+        position: absolute;
         width: 362px;
         z-index: -1;
         left: 20px;
         top: 34px;
         transform: rotate(4deg);
+        /* display: none; */
     }
-    .facts-backcard-content{
+
+    .facts-backcard-content {
         background-image: url(../img/bg-personaje-descripcion.jpg);
         background-size: cover;
         background-repeat: repeat;
         border: 11px solid #fff;
         border-radius: 54px;
-        min-height: 362px;
+        min-height: 442px;
         width: 362px;
         position: absolute;
-        bottom: 22rem;
-        left: 4rem;
+        left: 10rem;
     }
 }
 
@@ -841,6 +871,10 @@ NEWSLETTER MODAL
         display: none;
     }
 
+    .character-name-bg {
+        font-size: 10rem;
+    }
+
     .character-detail {
         display: flex;
         align-items: center;
@@ -848,17 +882,25 @@ NEWSLETTER MODAL
         min-height: 100vh;
         padding-top: 12rem;
     }
-    .character-biography-content{
+
+    .character-biography-content {
         display: flex;
         flex-direction: column;
     }
-    .character-biography{
+
+    .character-biography {
         flex-direction: row;
     }
-    .facts-card{
+
+    .facts-card {
+        min-height: 500px;
+        transform: rotate(-9deg);
+    }
+
+    .facts-backcard-content {
         min-height: 500px;
     }
-    .facts-backcard-content{
-        min-height: 500px;
+    .facts-backcard-content {
+        left: 4rem;
     }
 }
