@@ -343,6 +343,8 @@ NEWSLETTER MODAL
 
 .celebrate-album {
     padding: 20px 0px 10px 20px;
+    z-index: 3;
+    position: relative;
 }
 
 .celebrate-album-title {

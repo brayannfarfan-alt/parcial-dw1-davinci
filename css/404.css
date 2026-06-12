@@ -1,0 +1,289 @@
+/* ==========================================
+   ROOT
+========================================== */
+
+:root{
+    --bluey-sky-top:#a6daf7;
+    --bluey-sky-bottom:#e8f5fd;
+
+    --title-dark:#15213d;
+    --title-soft:#625e96;
+    --paragraph:#4d607c;
+
+    --white:#fff;
+
+    --shadow:
+    0 20px 60px rgba(0,0,0,.15);
+}
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Nunito',sans-serif;
+    overflow-x:hidden;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* ==========================================
+   PAGE
+========================================== */
+
+.error-page{
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        to bottom,
+        var(--bluey-sky-top),
+        var(--bluey-sky-bottom)
+    );
+
+    position:relative;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    padding:32px 20px;
+}
+
+.error-page::before{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:url("../img/clouds-background.png");
+    background-size:120%;
+
+    opacity:.45;
+
+    pointer-events:none;
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.error-logo{
+    position:relative;
+    z-index:2;
+    width:180px;
+}
+
+.error-logo img{
+    width:100%;
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.error-content{
+    position:relative;
+    z-index:2;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    text-align:center;
+
+    width:100%;
+    max-width:1200px;
+
+    margin:auto;
+}
+
+/* ==========================================
+   VISUAL
+========================================== */
+
+.error-visual{
+    position:relative;
+    width:100%;
+    margin-bottom:40px;
+}
+
+.error-number{
+    position:absolute;
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    font-size:7rem;
+    font-weight:900;
+
+    color:rgba(98,94,150,.12);
+
+    line-height:1;
+
+    user-select:none;
+}
+
+.error-character{
+    position:relative;
+    width:min(320px,80vw);
+
+    margin:auto;
+
+    z-index:2;
+}
+
+.error-character img{
+    width:100%;
+}
+
+/* ==========================================
+   TEXT
+========================================== */
+
+.error-subtitle{
+    color:var(--title-soft);
+
+    font-weight:900;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:12px;
+}
+
+.error-info h1{
+    color:var(--title-dark);
+
+    font-size:2.2rem;
+
+    line-height:1.1;
+
+    font-weight:900;
+
+    margin-bottom:20px;
+}
+
+.error-description{
+    color:var(--paragraph);
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+    max-width:500px;
+
+    margin:auto auto 32px;
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.error-button{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    min-width:240px;
+    min-height:64px;
+
+    border-radius:999px;
+
+    background: var(--title-dark);
+
+    color: var(--white);
+
+    font-weight:900;
+
+    transition:.25s ease;
+
+    box-shadow:var(--shadow);
+}
+
+.error-button:hover{
+    transform:translateY(-4px);
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (min-width:768px){
+
+    .error-number{
+        font-size:12rem;
+    }
+
+    .error-character{
+        width:420px;
+    }
+
+    .error-info h1{
+        font-size:3rem;
+    }
+
+    .error-description{
+        font-size:1.1rem;
+    }
+
+}
+
+/* ==========================================
+   DESKTOP
+========================================== */
+
+@media (min-width:1024px){
+
+    .error-content{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+
+        text-align:left;
+
+        gap:80px;
+    }
+
+    .error-visual{
+        flex:1;
+        margin:0;
+    }
+
+    .error-info{
+        flex:1;
+    }
+
+    .error-number{
+        font-size:18rem;
+    }
+
+    .error-character{
+        width:500px;
+    }
+
+    .error-info h1{
+        font-size:4.5rem;
+    }
+
+    .error-description{
+        margin:0 0 40px;
+        max-width:600px;
+    }
+}

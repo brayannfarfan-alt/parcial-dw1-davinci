@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluey - Newsletter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/newsletter.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!--===================================================
+            NEWSLETTER MODAL
+    ===================================================  -->
+    <div class="newsletter-modal" id="newsletterModal">
+        <div class="newsletter-overlay"></div>
+        <div class="newsletter-box">
+            <button class="newsletter-close" id="closeNewsletter">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="newsletter-icon">
+                <i data-lucide="send"></i>
+            </div>
+            <h2>Unite a nuestro<br>NEWSLETTER</h2>
+            <p class="newsletter-description">
+                Create un perfil para recibir novedades, ofertas exclusivas y contenido personalizado de Bluey.
+            </p>
+            <p class="newsletter-small">
+                Al registrarte, aceptas nuestras <a href="newsletter.html">Políticas de Privacidad</a> y <a
+                    href="newsletter.html">Términos de Servicio</a>.
+            </p>
+            <div class="newsletter-group">
+                <h3>
+                    ¿No tenés una cuenta en Bluey?
+                </h3>
+                <a href="register.html">
+                    <button class="newsletter-primary">
+                        REGISTRATE AHORA
+                    </button>
+                </a>
+            </div>
+            <div class="newsletter-group">
+                <h3>Iniciar sesión</h3>
+                <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fwww.google.com%2F&ec=futura_exp_og_si_72776762_e&hl=es&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1390557286%3A1780075715765414"
+                    target="_blank">
+                    <button class="newsletter-secondary">
+                        CONTINUAR CON GOOGLE
+                    </button>
+                </a>
+            </div>
+            <a href="newsletter.html" class="newsletter-link">Para más información hacé clic aquí</a>
+        </div>
+    </div>
+    <!--===================================================
+            TOPBAR
+    ===================================================  -->
+
+    <header class="topbar">
+        <div class="topbar-container">
+            <a href="/" class="topbar-logo" aria-label="Inicio">
+                <img src="../img/bluey-logo.svg" alt="Logo de Bluey">
+            </a>
+            <nav class="topbar-navigation" aria-label="Navegación principal">
+                <ul class="topbar-links">
+                    <li><a href="../index.html">Casa</a></li>
+                    <li><a href="personajes.html">Personajes</a></li>
+                    <li><a href="planificador.html">Planificador IA</a></li>
+                    <li><a href="musica.html">Música</a></li>
+                </ul>
+            </nav>
+            <button class="hero-email-button open-newsletter" aria-label="Abrir mensajes">
+                <img src="../img/icono-email-logo.svg" alt="icono de email" aria-hidden="true">
+            </button>
+        </div>
+    </header>
+
+    <section id="header-topbar" class="hero">
+        <!--===================================================
+                    NEWSLETTER MODAL
+            ===================================================  -->
+        <section class="hero-mobile-bar">
+            <a href="/" class="hero-logo" aria-label="Inicio">
+                <img src="../img/bluey-logo.svg" alt="Logo Bluey">
+            </a>
+            <button class="hero-email-button open-newsletter" aria-label="Abrir mensajes" id="openNeswletter">
+                <img src="../img/icono-email-logo.svg" alt="Logo" aria-hidden="true">
+            </button>
+        </section>
+        <!--===================================================
+                    HERO CONTENT
+        ===================================================  -->
+
+    </section>
+    <!--===================================================
+            NAVEGACION PRINCIPAL
+    ===================================================  -->
+    <nav class="app-navigation" aria-label="Navegación rápida">
+        <ul class="app-navigation-list">
+            <li><a href="pages/menu.html" class="app-navigation-link"><i data-lucide="menu"></i><span>Menu</span></a>
+            </li>
+            <li><a href="../index.html" class="app-navigation-link active" aria-current="page"><i
+                        data-lucide="house"></i><span>Casa</span></a></li>
+            <li><a href="personajes.html" class="app-navigation-link"><i
+                        data-lucide="ghost"></i><span>Personajes</span></a></li>
+            <li><a href="planificador.html" class="app-navigation-link"><i data-lucide="bot"></i><span>IA</span></a>
+            </li>
+            <li><a href="musica.html" class="app-navigation-link"><i data-lucide="music"></i> <span>Música</span></a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main-content newsletter-page">
+
+        <section class="newsletter-hero">
+
+            <div class="newsletter-content">
+
+                <p class="newsletter-subtitle">
+                    EXPLORÁ EL UNIVERSO BLUEY
+                </p>
+
+                <h1>
+                    Unite a nuestro Newsletter
+                </h1>
+
+                <p class="newsletter-description">
+                    Recibí novedades, personajes, música, festivales y contenido exclusivo
+                    directamente en tu correo.
+                </p>
+
+                <form action="error404.html" class="newsletter-form">
+
+                    <div class="newsletter-field">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Ingresá tu nombre">
+                    </div>
+
+                    <div class="newsletter-field">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" placeholder="ejemplo@email.com">
+                    </div>
+
+                    <button type="submit" class="newsletter-button">
+                        SUSCRIBIRME
+                    </button>
+
+                </form>
+
+            </div>
+
+            <figure class="newsletter-image">
+                <img src="../img/family-pose.png" alt="Familia Bluey">
+            </figure>
+
+        </section>
+
+        <section class="newsletter-terms">
+
+            <h2>
+                Términos y Condiciones
+            </h2>
+
+            <article class="accordion">
+
+                <input type="checkbox" id="term1">
+
+                <label for="term1">
+                    Uso de la información
+                </label>
+
+                <div class="accordion-content">
+
+                    <p>
+                        Al suscribirte al Newsletter de Bluey aceptás recibir
+                        novedades, actualizaciones, promociones y contenido
+                        relacionado con personajes, música, festivales y nuevas
+                        experiencias de la plataforma.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="accordion">
+
+                <input type="checkbox" id="term2">
+
+                <label for="term2">
+                    Privacidad de datos
+                </label>
+
+                <div class="accordion-content">
+
+                    <p>
+                        Tu información personal será utilizada únicamente para
+                        enviarte comunicaciones relacionadas con Bluey.
+                        No compartiremos tus datos con terceros sin tu consentimiento.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="accordion">
+
+                <input type="checkbox" id="term3">
+
+                <label for="term3">
+                    Cancelación de suscripción
+                </label>
+
+                <div class="accordion-content">
+
+                    <p>
+                        Podrás cancelar tu suscripción en cualquier momento
+                        utilizando el enlace incluido en nuestros correos
+                        electrónicos.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="accordion">
+
+                <input type="checkbox" id="term4">
+
+                <label for="term4">
+                    Contenido del Newsletter
+                </label>
+
+                <div class="accordion-content">
+
+                    <p>
+                        El contenido enviado puede incluir noticias,
+                        recomendaciones, actividades familiares,
+                        lanzamientos musicales y herramientas del Planificador IA.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+    </main>
+    <!--===================================================
+                    FOOTER 
+    ===================================================  -->
+    <footer class="bluey-footer">
+        <div class="footer-top">
+            <a href="#" class="footer-logo">
+                <img src="../img/bluey-logo-blanco.svg" alt="Bluey Logo">
+            </a>
+            <div class="footer-social">
+                <a class="footer-social-item" href="https://www.facebook.com/OfficialBlueyTV/" target="_blank">
+                    <img src="../img/facebook.png" alt="Logo facebook">
+                </a>
+                <a class="footer-social-item" href="https://www.instagram.com/officialbluey/" target="_blank">
+                    <img src="../img/instagram.png" alt="Logo instagram">
+                </a>
+                <a class="footer-social-item" href="https://www.tiktok.com/@bluey" target="_blank">
+                    <img src="../img/tik-tok.png" alt="Logo tik tok">
+                </a>
+                <a class="footer-social-item" href="https://open.spotify.com/intl-es/artist/6ca3AFdIIgaP4ZIW8J6zXu"
+                    target="_blank">
+                    <img src="../img/spotify.png" alt="Logo spotify">
+                </a>
+                <a class="footer-social-item" href="https://www.youtube.com/c/BlueyOfficialChannel" target="_blank">
+                    <img src="../img/youtube.png" alt="Logo youtube">
+                </a>
+                <div>
+                    <a href="newsletter.html" class="footer-subscribe">
+                        <img src="../img/carta.png" alt="Logo carta">
+                        <span>
+                            SUBSCRIBITE
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>
+                    BLUEY™ una Familia divertida
+                </p>
+                <p>
+                    Email: brayann.verona@davinci.edu.ar
+                </p>
+                <p>
+                    Edad: 31 años
+                </p>
+                <p>
+                    Alumno: Brayann Verona
+                </p>
+            </div>
+            <nav class="footer-links">
+                <ul>
+                    <li><a href="error404.html">
+                            Contactanos
+                        </a></li>
+                    <li><a href="error404.html">
+                            Términos y Condiciones
+                        </a></li>
+                    <li><a href="error404.html">
+                            Politicas de privacidad
+                        </a></li>
+                    <li><a href="error404.html">
+                            Politicas de Sesión
+                        </a></li>
+                    <li><a href="error404.html">
+                            BBC Studios
+                        </a></li>
+                </ul>
+            </nav>
+            <a href="#header-topbar" class="footer-floating">
+                <i data-lucide="chevron-up"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="../js/app.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</body>
+
+</html>
