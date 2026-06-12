@@ -432,7 +432,9 @@ NEWSLETTER MODAL
     max-width: 1300px;
     margin: 0 auto;
 }
-
+.terries{
+    max-width: 300px;
+}
 .character-biography {
     display: flex;
     flex-direction: column;
@@ -766,14 +768,12 @@ NEWSLETTER MODAL
     }
 
     .facts-backcard {
-        /* min-height: 362px; */
         position: absolute;
         width: 362px;
         z-index: -1;
         left: 20px;
         top: 34px;
         transform: rotate(4deg);
-        /* display: none; */
     }
 
     .facts-backcard-content {
