@@ -444,7 +444,6 @@ NEWSLETTER MODAL
 }
 
 .music-card img {
-    /* width:70px; */
     height: 70px;
     object-fit: cover;
     border-radius: 16px;
@@ -487,8 +486,6 @@ NEWSLETTER MODAL
 }
 
 .album-card img {
-    /* width:100%; */
-    /* aspect-ratio:1/1; */
     object-fit: cover;
 }
 

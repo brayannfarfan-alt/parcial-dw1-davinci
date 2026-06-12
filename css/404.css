@@ -46,34 +46,26 @@ a{
 
 .error-page{
     min-height:100vh;
-
     background:
     linear-gradient(
         to bottom,
         var(--bluey-sky-top),
         var(--bluey-sky-bottom)
     );
-
     position:relative;
-
     display:flex;
     flex-direction:column;
     align-items:center;
-
     padding:32px 20px;
 }
 
 .error-page::before{
     content:"";
-
     position:absolute;
     inset:0;
-
     background:url("../img/clouds-background.png");
     background-size:120%;
-
     opacity:.45;
-
     pointer-events:none;
 }
 
@@ -98,16 +90,12 @@ a{
 .error-content{
     position:relative;
     z-index:2;
-
     display:flex;
     flex-direction:column;
     align-items:center;
-
     text-align:center;
-
     width:100%;
     max-width:1200px;
-
     margin:auto;
 }
 
@@ -125,25 +113,18 @@ a{
     position:absolute;
     left:50%;
     top:50%;
-
     transform:translate(-50%,-50%);
-
     font-size:7rem;
     font-weight:900;
-
     color:rgba(98,94,150,.12);
-
     line-height:1;
-
     user-select:none;
 }
 
 .error-character{
     position:relative;
     width:min(320px,80vw);
-
     margin:auto;
-
     z-index:2;
 }
 
@@ -157,37 +138,25 @@ a{
 
 .error-subtitle{
     color:var(--title-soft);
-
     font-weight:900;
-
     letter-spacing:2px;
-
     text-transform:uppercase;
-
     margin-bottom:12px;
 }
 
 .error-info h1{
     color:var(--title-dark);
-
     font-size:2.2rem;
-
     line-height:1.1;
-
     font-weight:900;
-
     margin-bottom:20px;
 }
 
 .error-description{
     color:var(--paragraph);
-
     font-size:1rem;
-
     line-height:1.8;
-
     max-width:500px;
-
     margin:auto auto 32px;
 }
 
@@ -197,23 +166,15 @@ a{
 
 .error-button{
     display:inline-flex;
-
     align-items:center;
     justify-content:center;
-
     min-width:240px;
     min-height:64px;
-
     border-radius:999px;
-
     background: var(--title-dark);
-
     color: var(--white);
-
     font-weight:900;
-
     transition:.25s ease;
-
     box-shadow:var(--shadow);
 }
 

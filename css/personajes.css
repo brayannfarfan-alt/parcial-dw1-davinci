@@ -718,8 +718,6 @@ PERSONAJES GALERIA
 
     .hero {
         display: flex;
-        /* align-items: flex-end;
-        justify-content: center; */
         background: linear-gradient(to bottom, rgba(0, 0, 0, .08), transparent 40%), url('../img/bg-personajes-tablet.png') center center / cover no-repeat;
     }
 

@@ -405,14 +405,9 @@ NEWSLETTER MODAL
     background: rgba(255, 255, 255, .55);
     backdrop-filter: blur(18px);
     border: 1px solid rgba(255, 255, 255, .45);
-
     border-radius: 42px;
-
-    padding:
-        80px 24px 30px;
-
-    box-shadow:
-        0 15px 40px rgba(0, 0, 0, .08);
+    padding:80px 24px 30px;
+    box-shadow:0 15px 40px rgba(0, 0, 0, .08);
 }
 
 .music-player-header {
@@ -441,13 +436,9 @@ NEWSLETTER MODAL
     display: flex;
     align-items: center;
     gap: 18px;
-
     padding: 14px 18px;
-
     border-radius: 18px;
-
     color: var(--title-dark-soft);
-
     transition: .25s ease;
 }
 
@@ -472,7 +463,6 @@ NEWSLETTER MODAL
 .music-player-footer a {
     background: none;
     color: var(--title-dark-soft);
-
     font-size: 1rem;
     font-weight: 800;
 }
