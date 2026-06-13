@@ -2,7 +2,7 @@
     ROOT
 =================================================== */
 :root {
-    --bluey-sky-top: #a6daf7;
+    --bluey-sky-top: #D8D7F8;
     --bluey-sky-bottom: #e8f5fd;
     --bg-dark: #0d1127;
     --bg-dark-soft: #141a33;
@@ -174,7 +174,15 @@ NEWSLETTER MODAL
 .newsletter-secondary{
     width:100%;
     min-height:78px;
+    padding: 14px 18px;
     border-radius:999px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    text-decoration:none;
+    box-sizing:border-box;
+    line-height:1.2;
     font-size:1.2rem;
     font-weight:900;
     transition:.25s ease;
@@ -662,5 +670,7 @@ NEWSLETTER MODAL
         right:40px;
         bottom:30px;
     }
-
+    .newsletter-hero{
+        margin: 7rem;
+    }
 }

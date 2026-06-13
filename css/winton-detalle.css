@@ -201,7 +201,15 @@ NEWSLETTER MODAL
 .newsletter-secondary {
     width: 100%;
     min-height: 78px;
+    padding: 14px 18px;
     border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    line-height: 1.2;
     font-size: 1.2rem;
     font-weight: 900;
     transition: .25s ease;

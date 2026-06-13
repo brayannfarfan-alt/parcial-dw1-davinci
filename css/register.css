@@ -19,11 +19,11 @@
     --glass-blur: blur(18px);
     --container-width: 1280px;
     --bg-general: #7caed6;
-    --bg-modal: rgba(7, 14, 28, .72);
+    --bg-modal: rgba(7, 14, 28, 0.72);
 }
 
 /* ===================================================
-    RESET
+            RESET
 =================================================== */
 * {
     margin: 0;
@@ -55,13 +55,6 @@ button {
     font-family: inherit;
 }
 
-.topbar {
-    display: none;
-}
-
-/* ===================================================
-    ESTILOS BODY
-=================================================== */
 body {
     font-family: 'Nunito', sans-serif;
     min-height: 100vh;
@@ -81,9 +74,10 @@ body::before {
     background-size: 120%;
 }
 
-/* ===================================================
-NEWSLETTER MODAL
-=================================================== */
+.topbar {
+    display: none;
+}
+
 .newsletter-modal {
     position: fixed;
     inset: 0;
@@ -127,7 +121,6 @@ NEWSLETTER MODAL
         opacity: 0;
         transform: translateY(30px) scale(.96);
     }
-
     to {
         opacity: 1;
         transform: translateY(0) scale(1);
@@ -239,16 +232,6 @@ NEWSLETTER MODAL
     text-decoration: underline;
 }
 
-/* ===================================================
-    HERO BLUEY
-=================================================== */
-.hero-personajes {
-    position: relative;
-    z-index: 1;
-    height: 100vh;
-    background: url('../img/bg-personajes-Mobile.png') bottom center / cover no-repeat;
-}
-
 .hero-mobile-bar {
     display: flex;
     align-items: center;
@@ -268,48 +251,6 @@ NEWSLETTER MODAL
 
 .hero-email-button img {
     width: 26px;
-}
-
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    min-height: 80vh;
-    padding: 20px;
-}
-
-.hero-text {
-    max-width: 450px;
-    margin-bottom: 20px;
-}
-
-.hero-subtitle {
-    color: white;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 14px;
-}
-
-.hero-text h1 {
-    color: white;
-    font-size: clamp(2.5rem, 7vw, 5rem);
-    line-height: 1.05;
-    margin-bottom: 20px;
-    font-weight: 900;
-    text-shadow: 0 6px 18px rgba(0, 0, 0, .18);
-}
-
-.hero-description {
-    color: var(--text-primary);
-    font-size: 1.1rem;
-    line-height: 1.7;
-}
-
-.hero-search {
-    display: none;
 }
 
 .app-navigation {
@@ -359,165 +300,6 @@ NEWSLETTER MODAL
     filter: drop-shadow(0 0 10px rgba(100, 210, 255, .7));
 }
 
-/* ===================================================
-PERSONAJES SLIDER
-=================================================== */
-
-.characters-slider {
-    position: relative;
-    overflow: hidden;
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.slider-wrapper {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.character-slide button {
-    padding: 2px 12px;
-    border-radius: 999px;
-    background: #67639c;
-    color: white;
-    font-weight: 900;
-    letter-spacing: 1px;
-}
-
-/* ===================================================
-PERSONAJES GALERIA
-=================================================== */
-.characters-page {
-    width: min(82%, 1200px);
-    margin: auto;
-    padding: 40px 0;
-}
-
-.characters-header {
-    margin-bottom: 32px;
-}
-
-.characters-title h2 {
-    font-size: clamp(2.5rem, 8vw, 5rem);
-    color: var(--bg-general);
-    font-weight: 900;
-    line-height: 1.1;
-    text-align: center;
-    margin-bottom: 14px;
-}
-
-.characters-search {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: var(--menu-bg);
-    backdrop-filter: var(--glass-blur);
-    border-radius: 999px;
-    padding: 12px 18px;
-    box-shadow: var(--shadow);
-    position: relative;
-    bottom: 20px;
-    z-index: 2;
-    width: 90%;
-    margin: auto;
-}
-
-.characters-search input {
-    flex: 1;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    background: none;
-    position: relative;
-    color: var(--text-primary);
-}
-
-.characters-search input::placeholder {
-    color: var(--text-primary);
-}
-
-.characters-search button {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-.characters-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-        "green pink"
-        "orange blue"
-        "aqua yellow"
-        "aqua sky"
-    ;
-    gap: 14px;
-    width: 90%;
-    margin: auto;
-}
-
-.characters-grid>a {
-    display: contents;
-}
-
-.character-card {
-    border-radius: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background-size: 140px;
-    background-repeat: repeat;
-}
-
-.character-card img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    max-height: 100%;
-    transition: transform .35s ease;
-    will-change: transform;
-}
-.second_item{
-    margin-top: 7rem;
-}
-.green {
-    grid-area: green;
-}
-
-.pink {
-    grid-area: pink;
-}
-
-.orange {
-    grid-area: orange;
-}
-
-.blue {
-    grid-area: blue;
-}
-
-.aqua {
-    grid-area: aqua;
-}
-
-.yellow {
-    grid-area: yellow;
-}
-
-.sky {
-    grid-area: sky;
-}
-
-/* ===================================================
-    FOOTER BLUEY
-=================================================== */
 .bluey-footer {
     position: relative;
     overflow: hidden;
@@ -525,7 +307,6 @@ PERSONAJES GALERIA
     padding: 70px 24px 120px;
     color: var(--text-primary);
     backdrop-filter: var(--glass-blur);
-    margin-top: 4rem;
 }
 
 .footer-top {
@@ -607,7 +388,7 @@ PERSONAJES GALERIA
 }
 
 .footer-links ul li {
-    margin: 5px 0px;
+    margin: 5px 0;
 }
 
 .footer-links a {
@@ -642,38 +423,254 @@ PERSONAJES GALERIA
 }
 
 /* ===================================================
-    MEDIA QUERIES
+    REGISTER PAGE
 =================================================== */
-@media (min-width:768px) {
-    .hero {
-        background: url('../img/bg-personajes-tablet.png') center center / cover no-repeat;
+.register-page {
+    position: relative;
+    z-index: 2;
+    width: min(100%, 1280px);
+    margin: auto;
+    padding: 24px 14px 100px;
+}
+
+.register-hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.register-copy,
+.register-card,
+.register-highlight {
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+.register-copy {
+    padding: 24px;
+}
+
+.register-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--title-dark-soft);
+    font-size: 0.92rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+.register-copy h1 {
+    color: var(--title-dark);
+    font-size: clamp(2rem, 7vw, 3.4rem);
+    line-height: 1.05;
+    margin-bottom: 14px;
+}
+
+.register-copy p {
+    color: var(--paragraph-dark);
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.register-list {
+    display: grid;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.register-list li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    color: var(--title-dark);
+    font-weight: 700;
+}
+
+.register-list li::before {
+    content: "✓";
+    display: inline-grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 999px;
+    background: var(--bluey-sky-top);
+    color: var(--title-dark);
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.register-card {
+    padding: 24px;
+}
+
+.register-card-header {
+    margin-bottom: 18px;
+}
+
+.register-card-header h2 {
+    color: var(--title-dark);
+    font-size: 1.35rem;
+    margin-bottom: 6px;
+}
+
+.register-card-header p {
+    color: var(--paragraph-dark);
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+.register-form {
+    display: grid;
+    gap: 14px;
+}
+
+.register-field {
+    display: grid;
+    gap: 7px;
+}
+
+.register-field label {
+    color: var(--title-dark);
+    font-weight: 800;
+    font-size: 0.98rem;
+}
+
+.register-field input,
+.register-field select {
+    width: 100%;
+    min-height: 56px;
+    border: 1px solid rgba(98, 94, 150, 0.18);
+    border-radius: 16px;
+    padding: 0 14px;
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--title-dark);
+    font: inherit;
+    box-shadow: 0 10px 24px rgba(21, 33, 61, 0.08);
+}
+
+.register-field input:focus,
+.register-field select:focus {
+    outline: 2px solid var(--title-dark-soft);
+    border-color: transparent;
+}
+
+.register-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}
+
+.register-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--paragraph-dark);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.register-checkbox input {
+    margin-top: 4px;
+    accent-color: var(--title-dark-soft);
+}
+
+.register-button {
+    min-height: 60px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--title-dark), #233559);
+    color: var(--text-primary);
+    font-weight: 900;
+    letter-spacing: 1px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 12px 24px rgba(21, 33, 61, 0.18);
+}
+
+.register-button:hover {
+    transform: translateY(-2px);
+}
+
+.register-note {
+    color: var(--paragraph-dark);
+    font-size: 0.92rem;
+    line-height: 1.5;
+}
+
+.register-highlight {
+    padding: 18px;
+    display: grid;
+    gap: 14px;
+    align-content: start;
+}
+
+.register-highlight-card {
+    padding: 14px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, rgba(166, 218, 247, 0.45), rgba(255, 255, 255, 0.92));
+    border: 1px solid rgba(98, 94, 150, 0.12);
+}
+
+.register-highlight-card h3 {
+    color: var(--title-dark);
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.register-highlight-card p {
+    color: var(--paragraph-dark);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.register-mini-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--title-dark);
+    font-weight: 900;
+}
+
+.register-mini-brand span {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: var(--title-dark-soft);
+    color: var(--text-primary);
+}
+
+@media (min-width: 768px) {
+    .register-page {
+        width: 90%;
+        padding: 40px 0 120px;
     }
 
-    .app-navigation {
-        max-width: 680px;
-        border-radius: 34px;
-        padding: 18px 22px;
+    .register-hero {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        align-items: stretch;
     }
 
-    .app-navigation-link {
-        font-size: .85rem;
+    .register-copy,
+    .register-card,
+    .register-highlight {
+        border-radius: 24px;
     }
 
-    .app-navigation-link i {
-        width: 28px;
-        height: 28px;
-    }
-
-    .characters-slider {
-        min-height: 70vh;
-    }
-
-    .characters-grid {
-        width: min(75%, 1200px);
+    .register-row {
+        grid-template-columns: 1fr;
     }
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
     .topbar {
         display: block;
         position: fixed;
@@ -690,12 +687,11 @@ PERSONAJES GALERIA
         justify-content: space-between;
         padding: 16px 26px;
         border-radius: 24px;
-        background: rgba(20, 26, 51, .42);
-        border: 1px solid rgba(255, 255, 255, .08);
+        background: rgba(20, 26, 51, 0.42);
+        border: 1px solid rgba(255, 255, 255, 0.08);
         backdrop-filter: var(--glass-blur);
         -webkit-backdrop-filter: var(--glass-blur);
-        box-shadow:
-            0 10px 30px rgba(0, 0, 0, .12);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
     }
 
     .topbar-logo {
@@ -711,8 +707,8 @@ PERSONAJES GALERIA
     .topbar-links a {
         color: white;
         font-weight: 700;
-        opacity: .82;
-        transition: .25s ease;
+        opacity: 0.82;
+        transition: 0.25s ease;
     }
 
     .topbar-links a:hover {
@@ -724,89 +720,35 @@ PERSONAJES GALERIA
         display: none;
     }
 
-    .hero {
-        display: flex;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, .08), transparent 40%), url('../img/bg-personajes-tablet.png') center center / cover no-repeat;
-    }
-
-    .app-navigation {
-        width: auto;
-        max-width: none;
-        padding: 14px 18px;
-        border-radius: 999px;
-    }
-
-    .app-navigation-list {
-        gap: 10px;
-    }
-
-    .app-navigation-link {
-        flex-direction: row;
-        gap: 10px;
-        padding: 12px 18px;
-        border-radius: 16px;
-        font-size: .9rem;
-    }
-
-    .app-navigation-link:hover {
-        background: rgba(255, 255, 255, .06);
-        transform: translateY(-2px);
-    }
-
-    .app-navigation-link.active {
-        background:
-            rgba(100, 210, 255, .12);
-    }
-
-    .main-content {
-        padding-top: 120px;
-    }
-
-    .hero-text h1 {
-        font-size: clamp(2.5rem, 2vw, 5rem);
-    }
-
     .app-navigation {
         display: none;
     }
 
-    .hero {
-        justify-content: center;
-        align-items: end;
-    }
-    .hero-text {
-        flex: 1;
-        max-width: 100%;
-        margin-top: 2rem;
-    }
-    .hero-content {
-        height: 10vh;
-        padding: 20px;
-        justify-content: center;
+    .register-page {
+        padding: 210px 32px 160px;
     }
 
-    .hero-text h1 {
-        font-size: clamp(2rem, 7vw, 5rem);
-    }
-    .hero-subtitle {
-        margin-top: 9rem;
-    }
-    .characters-grid {
-        width: min(80%, 900px);
-        grid-template-columns: repeat(4, 1fr);
+    .register-hero {
+        grid-template-columns: 1.05fr 0.95fr;
         grid-template-areas:
-            "green aqua pink sky"
-            "blue aqua yellow orange"
-        ;
-        gap: 12px;
+            "copy card"
+            "highlight highlight";
+        gap: 24px;
+        align-items: start;
     }
 
-    .characters-search {
-        width: 30%;
-        margin: auto;
+    .register-copy {
+        grid-area: copy;
+        padding: 32px;
     }
 
-    .character-card:hover img {
-        transform: scale(1.05);
+    .register-card {
+        grid-area: card;
+        padding: 28px;
+    }
+
+    .register-highlight {
+        grid-area: highlight;
+        min-height: 100%;
     }
 }
