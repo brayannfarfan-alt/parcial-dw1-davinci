@@ -311,7 +311,122 @@ NEWSLETTER MODAL
     color: var(--icon-active);
     filter: drop-shadow(0 0 10px rgba(100, 210, 255, .7));
 }
+/* ==========================================
+   BLUEY HUB MODAL
+========================================== */
 
+.menu-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease;
+}
+
+.menu-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(7,14,28,.72);
+    backdrop-filter: blur(8px);
+}
+
+.menu-box {
+    position: relative;
+    z-index: 2;
+    width: min(100%, 450px);
+    background: white;
+    border-radius: 36px;
+    padding: 30px 24px;
+    text-align: center;
+    animation: modalUp .35s ease;
+}
+
+.menu-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--title-dark-soft);
+}
+
+.menu-character {
+    width: 120px;
+    margin: 0 auto 10px;
+}
+
+.menu-character img {
+    width: 100%;
+}
+
+.menu-box h2 {
+    color: var(--title-dark-soft);
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.menu-description {
+    color: var(--paragraph-dark);
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.menu-actions {
+    display: grid;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.menu-card {
+    min-height: 70px;
+    border-radius: 20px;
+    background: #d9f1ff;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 0 20px;
+    color: var(--title-dark-soft);
+    font-weight: 900;
+    transition: .25s;
+}
+
+.menu-card:hover {
+    transform: translateY(-3px);
+}
+
+.menu-card i {
+    width: 24px;
+    height: 24px;
+}
+
+.menu-surprise {
+    display: block;
+    padding: 18px;
+    border-radius: 999px;
+    background: var(--title-dark-soft);
+    color: white;
+    font-weight: 900;
+    font-size: 1.1rem;
+    transition: .25s;
+}
+
+.menu-surprise:hover {
+    transform: translateY(-3px);
+}
 /* ===================================================
     HERO BLUEY
 =================================================== */
@@ -900,5 +1015,10 @@ main{
 
     .music-player-footer button:hover {
         transform: translateY(-2px);
+    }
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
     }
 }

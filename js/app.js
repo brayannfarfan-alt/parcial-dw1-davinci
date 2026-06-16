@@ -50,4 +50,46 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    const menuModal =
+    document.getElementById("menuModal");
+
+    const openMenu =
+        document.querySelector(".open-menu");
+
+    const closeMenu =
+        document.getElementById("closeMenu");
+
+    const menuOverlay =
+        document.querySelector(".menu-overlay");
+
+    if (openMenu) {
+
+        openMenu.addEventListener("click", () => {
+
+            menuModal.classList.add("active");
+
+        });
+
+    }
+
+    if (closeMenu) {
+
+        closeMenu.addEventListener("click", () => {
+
+            menuModal.classList.remove("active");
+
+        });
+
+    }
+
+    if (menuOverlay) {
+
+        menuOverlay.addEventListener("click", () => {
+
+            menuModal.classList.remove("active");
+
+        });
+
+    }
+
 });

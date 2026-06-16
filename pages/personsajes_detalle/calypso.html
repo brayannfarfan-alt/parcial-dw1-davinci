@@ -47,13 +47,67 @@
                 <h3>Iniciar sesión</h3>
                 <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fwww.google.com%2F&ec=futura_exp_og_si_72776762_e&hl=es&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1390557286%3A1780075715765414"
                     target="_blank" class="newsletter-secondary">
-                        CONTINUAR CON GOOGLE
-                    </a>
+                    CONTINUAR CON GOOGLE
+                </a>
             </div>
             <a href="../newsletter.html" class="newsletter-link">Para más información hacé clic aquí</a>
         </div>
     </div>
+    <!--===================================================
+        BLUEY MENU MODAL
+    ===================================================-->
 
+    <div class="menu-modal" id="menuModal">
+
+        <div class="menu-overlay"></div>
+
+        <div class="menu-box">
+
+            <button class="menu-close" id="closeMenu">
+                <i data-lucide="x"></i>
+            </button>
+
+            <figure class="menu-character">
+                <img src="../../img/bluey.png" alt="Bluey">
+            </figure>
+
+            <h2>¡Hola Explorador!</h2>
+
+            <p class="menu-description">
+                Elegí una aventura para seguir descubriendo el mundo de Bluey.
+            </p>
+
+            <div class="menu-actions">
+
+                <a href="../error404.html" class="menu-card">
+                    <i data-lucide="dice-5"></i>
+                    <span>Personaje Destacado</span>
+                </a>
+
+                <a href="../error404.html" class="menu-card">
+                    <i data-lucide="music-4"></i>
+                    <span>Canción Favorita</span>
+                </a>
+
+                <a href="../error404.html" class="menu-card">
+                    <i data-lucide="bot"></i>
+                    <span>Crear con IA</span>
+                </a>
+
+                <a href="../error404.html" class="menu-card">
+                    <i data-lucide="mail"></i>
+                    <span>Newsletter</span>
+                </a>
+
+            </div>
+
+            <a href="../error404.html" class="menu-surprise">
+                🎲 ¡SORPRÉNDEME!
+            </a>
+
+        </div>
+
+    </div>
     <!--===================================================
             TOPBAR
     ===================================================  -->
@@ -122,7 +176,8 @@
     ===================================================  -->
     <nav class="app-navigation" aria-label="Navegación rápida">
         <ul class="app-navigation-list">
-            <li><a href="../menu.html" class="app-navigation-link"><i data-lucide="menu"></i><span>Menu</span></a>
+            <li><button type="button" class="app-navigation-link open-menu"><i
+                        data-lucide="menu"></i><span>Menu</span></button>
             </li>
             <li><a href="../../index.html" class="app-navigation-link active" aria-current="page"><i
                         data-lucide="house"></i><span>Casa</span></a></li>
@@ -134,6 +189,7 @@
             </li>
         </ul>
     </nav>
+
     <main class="character-main">
 
         <section class="character-biography">
@@ -142,15 +198,19 @@
                 <article class="character-story">
 
                     <p>
-                        <strong>Calypso</strong> es el profesor de la escuela de Bluey. Ella es una pastora australiana merle azul con una voz suave y hermosa.
+                        <strong>Calypso</strong> es el profesor de la escuela de Bluey. Ella es una pastora australiana
+                        merle azul con una voz suave y hermosa.
                     </p>
 
                     <p>
-                        A Calypso le encanta cantar y tararear canciones en el aula mientras vigila a los niños. Bluey aprende mucho de ella; es una excelente maestra que guía a sus estudiantes con palabras amables y un suave empujón en la dirección correcta.
+                        A Calypso le encanta cantar y tararear canciones en el aula mientras vigila a los niños. Bluey
+                        aprende mucho de ella; es una excelente maestra que guía a sus estudiantes con palabras amables
+                        y un suave empujón en la dirección correcta.
                     </p>
 
                     <p>
-                        Ayuda a guiar a los niños hacia buenas conclusiones, pero les permite experimentar el viaje por sí mismos. Calypso también es muy bueno tejiendo y contando historias.
+                        Ayuda a guiar a los niños hacia buenas conclusiones, pero les permite experimentar el viaje por
+                        sí mismos. Calypso también es muy bueno tejiendo y contando historias.
                     </p>
                 </article>
 
@@ -215,7 +275,10 @@
 
             <div class="video-container">
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/llKatQVvOu8?si=EKKfyyLDc8_fnVIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/llKatQVvOu8?si=EKKfyyLDc8_fnVIk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
             </div>
 
@@ -294,7 +357,7 @@
             </a>
         </div>
     </footer>
-    
+
     <script src="../../js/app.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
 </body>

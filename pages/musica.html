@@ -51,7 +51,61 @@
             <a href="newsletter.html" class="newsletter-link">Para más información hacé clic aquí</a>
         </div>
     </div>
+        <!--===================================================
+        BLUEY MENU MODAL
+    ===================================================-->
 
+    <div class="menu-modal" id="menuModal">
+
+        <div class="menu-overlay"></div>
+
+        <div class="menu-box">
+
+            <button class="menu-close" id="closeMenu">
+                <i data-lucide="x"></i>
+            </button>
+
+            <figure class="menu-character">
+                <img src="../img/bluey.png" alt="Bluey">
+            </figure>
+
+            <h2>¡Hola Explorador!</h2>
+
+            <p class="menu-description">
+                Elegí una aventura para seguir descubriendo el mundo de Bluey.
+            </p>
+
+            <div class="menu-actions">
+
+                <a href="error404.html" class="menu-card">
+                    <i data-lucide="dice-5"></i>
+                    <span>Personaje Destacado</span>
+                </a>
+
+                <a href="error404.html" class="menu-card">
+                    <i data-lucide="music-4"></i>
+                    <span>Canción Favorita</span>
+                </a>
+
+                <a href="error404.html" class="menu-card">
+                    <i data-lucide="bot"></i>
+                    <span>Crear con IA</span>
+                </a>
+
+                <a href="error404.html" class="menu-card">
+                    <i data-lucide="mail"></i>
+                    <span>Newsletter</span>
+                </a>
+
+            </div>
+
+            <a href="error404.html" class="menu-surprise">
+                🎲 ¡SORPRÉNDEME!
+            </a>
+
+        </div>
+
+    </div>
     <!--===================================================
             TOPBAR
     ===================================================  -->
@@ -116,7 +170,8 @@
     ===================================================  -->
     <nav class="app-navigation" aria-label="Navegación rápida">
         <ul class="app-navigation-list">
-            <li><a href="menu.html" class="app-navigation-link"><i data-lucide="menu"></i><span>Menu</span></a>
+            <li><button type="button" class="app-navigation-link open-menu"><i
+                        data-lucide="menu"></i><span>Menu</span></button>
             </li>
             <li><a href="../index.html" class="app-navigation-link active" aria-current="page"><i
                         data-lucide="house"></i><span>Casa</span></a></li>
