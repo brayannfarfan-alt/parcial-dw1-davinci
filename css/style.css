@@ -489,7 +489,22 @@ NEWSLETTER MODAL
 .extra-character{
     z-index:1;
 }
+/* ==========================================
+   DIVISOR DE JARDIN
+========================================== */
 
+.bluey-garden-divider{
+    width:100%;
+    height:80px;
+
+    background-image:url('../img/footer.png');
+    background-repeat:no-repeat;
+    background-position:center bottom;
+    background-size:cover;
+
+    position:relative;
+    z-index:2;
+}
 /* ===================================================
     FOOTER BLUEY
 =================================================== */
@@ -944,5 +959,7 @@ NEWSLETTER MODAL
         right:40px;
         bottom:30px;
     }
-
+    .bluey-garden-divider{
+        height:110px;
+    }
 }

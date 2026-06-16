@@ -465,7 +465,18 @@ NEWSLETTER MODAL
 .accordion input:checked ~ .accordion-content{
     max-height:300px;
 }
+.bluey-garden-divider{
+    width:100%;
+    height:80px;
 
+    background-image:url('../img/footer-top-bg.png');
+    background-repeat:no-repeat;
+    background-position:center bottom;
+    background-size:cover;
+
+    position:relative;
+    z-index:2;
+}
 /* ===================================================
     FOOTER BLUEY
 =================================================== */
