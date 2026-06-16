@@ -474,6 +474,112 @@ NEWSLETTER MODAL
     font-size: 1rem;
     font-weight: 800;
 }
+main{
+    width:min(92%,1200px);
+    margin:auto;
+    padding:4rem 0;
+}
+.section-header h2{
+    color:var(--title-dark-soft);
+    font-size:2rem;
+    font-weight:900;
+    margin-bottom:1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.song-story-card,
+.bluey-quote-card{
+    background:rgba(255,255,255,.55);
+    backdrop-filter:blur(18px);
+    border-radius:32px;
+    padding:2rem;
+    box-shadow:var(--shadow);
+}
+
+.song-story-card p{
+    color:var(--paragraph-dark);
+    line-height:1.8;
+    margin-bottom:1rem;
+}
+
+.song-facts{
+    margin-top:4rem;
+}
+.song-facts h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--title-dark-soft);
+}
+.song-facts-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:1rem;
+}
+
+.fact-item{
+    background:white;
+    border-radius:24px;
+    padding:1.5rem;
+    text-align:center;
+    box-shadow:var(--shadow);
+}
+
+.fact-item h3{
+    color:var(--title-dark-soft);
+    margin-bottom:.5rem;
+}
+
+.related-music{
+    margin-top:4rem;
+}
+
+.related-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:1.5rem;
+}
+
+.related-card{
+    background:white;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+}
+
+.related-card img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+}
+
+.related-card h3{
+    padding:1rem;
+    text-align:center;
+    color:var(--title-dark-soft);
+}
+
+.bluey-quote{
+    margin-top:4rem;
+}
+
+.bluey-quote-card{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:1rem;
+}
+
+.bluey-quote-card img{
+    width:120px;
+}
+
+.bluey-quote-card blockquote{
+    font-size:1.3rem;
+    color:var(--title-dark-soft);
+    font-weight:800;
+}
 .bluey-garden-divider{
     width:100%;
     height:80px;
@@ -486,6 +592,7 @@ NEWSLETTER MODAL
     position:relative;
     z-index:2;
 }
+
 /* ===================================================
     FOOTER BLUEY
 =================================================== */
